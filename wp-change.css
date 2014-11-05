@@ -1,0 +1,908 @@
+/* colors defined for dark style */
+/* dark style colors */
+/* end dark style */
+/* grey style colors */
+/* end dark style */
+/* light style colors */
+/* end dark style */
+/* end colors */
+.wpc {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wpc label,
+.wpc input,
+.wpc textarea,
+.wpc select {
+  display: block;
+  border: 0px;
+  margin: 0 auto;
+}
+.wpc label {
+  width: 100%;
+}
+.wpc input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+}
+.wpc label.checkbox {
+  display: inline-block;
+  width: auto;
+}
+.wpc .result {
+  padding: 10px;
+  border: 1px solid #00f;
+  margin: 5px 0;
+}
+.wpc .fail {
+  color: #f00;
+  border-color: #f00;
+}
+.wpc.wpc-tpl-onlyform,
+.wpc.wpc-tpl-tabs {
+  width: 100%;
+}
+.wpc.wpc-tpl-onlyform h2,
+.wpc.wpc-tpl-tabs h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.75em 0;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature,
+.wpc.wpc-tpl-tabs .wpc-widget-signature,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary,
+.wpc.wpc-tpl-tabs .wpc-widget-summary,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter,
+.wpc.wpc-tpl-tabs .wpc-widget-letter {
+  border: 1px solid;
+  -webkit-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 15px;
+  overflow-x: hidden;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature a,
+.wpc.wpc-tpl-tabs .wpc-widget-signature a,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary a,
+.wpc.wpc-tpl-tabs .wpc-widget-summary a,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter a,
+.wpc.wpc-tpl-tabs .wpc-widget-letter a {
+  text-decoration: none;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p {
+  margin: 15px 0;
+  position: relative;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p label,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p label,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p label,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p label,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p label,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p label {
+  display: none;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p label.error,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p label.error,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p label.error,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p label.error,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p label.error,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p label.error {
+  color: #c30;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: auto;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p input,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p input,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p input,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p input,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p input,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p input,
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p select,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p select,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p select,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p select,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p select,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p select,
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p textarea,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p textarea,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p textarea,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p textarea,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p textarea,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p textarea {
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0 8px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 32px;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p select,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p select,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p select,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p select,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p select,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p select {
+  height: 32px;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p select.error::-webkit-input-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p select.error::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p select.error::-webkit-input-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p select.error::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p select.error::-webkit-input-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p select.error::-webkit-input-placeholder {
+  color: transparent;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p select.error:-moz-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p select.error:-moz-placeholder,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p select.error:-moz-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p select.error:-moz-placeholder,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p select.error:-moz-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p select.error:-moz-placeholder {
+  color: transparent;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p select.error::-moz-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p select.error::-moz-placeholder,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p select.error::-moz-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p select.error::-moz-placeholder,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p select.error::-moz-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p select.error::-moz-placeholder {
+  color: transparent;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p select.error:-ms-input-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p select.error:-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p select.error:-ms-input-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p select.error:-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p select.error:-ms-input-placeholder,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p select.error:-ms-input-placeholder {
+  color: transparent;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p label.checkbox,
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p label.checkbox,
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p label.checkbox,
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p label.checkbox,
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p label.checkbox,
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p label.checkbox {
+  display: inline-block;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: normal;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-tabs .wpc-widget-signature form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-tabs .wpc-widget-summary form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-tabs .wpc-widget-letter form p label.checkbox input[type="checkbox"] {
+  display: inline-block;
+  width: 10%;
+}
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form input[type="reset"],
+.wpc.wpc-tpl-tabs .wpc-widget-signature form input[type="reset"],
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form input[type="reset"],
+.wpc.wpc-tpl-tabs .wpc-widget-summary form input[type="reset"],
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form input[type="reset"],
+.wpc.wpc-tpl-tabs .wpc-widget-letter form input[type="reset"],
+.wpc.wpc-tpl-onlyform .wpc-widget-signature form input[type="submit"],
+.wpc.wpc-tpl-tabs .wpc-widget-signature form input[type="submit"],
+.wpc.wpc-tpl-onlyform .wpc-widget-summary form input[type="submit"],
+.wpc.wpc-tpl-tabs .wpc-widget-summary form input[type="submit"],
+.wpc.wpc-tpl-onlyform .wpc-widget-letter form input[type="submit"],
+.wpc.wpc-tpl-tabs .wpc-widget-letter form input[type="submit"] {
+  width: 44%;
+  margin: 3%;
+  float: left;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 25px;
+  text-shadow: none;
+  font-size: 1em;
+}
+.wpc.wpc-tpl-onlyform ul.wpc-menu,
+.wpc.wpc-tpl-tabs ul.wpc-menu {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 0 -1px 0;
+  padding: 0;
+}
+.wpc.wpc-tpl-onlyform ul.wpc-menu li,
+.wpc.wpc-tpl-tabs ul.wpc-menu li {
+  height: 30px;
+  line-height: 28px;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid;
+  float: left;
+  margin-left: -1px;
+}
+.wpc.wpc-tpl-onlyform ul.wpc-menu li:first-child,
+.wpc.wpc-tpl-tabs ul.wpc-menu li:first-child {
+  margin-left: 0px;
+}
+.wpc.wpc-tpl-onlyform ul.wpc-menu li a,
+.wpc.wpc-tpl-tabs ul.wpc-menu li a {
+  display: block;
+  text-decoration: none;
+  padding: 0 15px;
+  height: 28px;
+  outline: none;
+  font-weight: bold;
+}
+.wpc.wpc-tpl-onlyform ul.wpc-menu li a:hover,
+.wpc.wpc-tpl-tabs ul.wpc-menu li a:hover {
+  -webkit-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+}
+/* menu tab switching section */
+.wpc-current-signature .wpc-tpl-tabs ul.wpc-menu li.sign {
+  border-bottom: none;
+}
+.wpc-current-signature .wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu li.sign a {
+  color: #fff;
+}
+.wpc-current-signature .wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu li.sign a:hover {
+  cursor: default;
+  background-color: #373737;
+}
+.wpc-current-signature .wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu li.sign a {
+  color: #f5b70b;
+}
+.wpc-current-signature .wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu li.sign a:hover {
+  cursor: default;
+  background-color: #aca8a2;
+}
+.wpc-current-signature .wpc-tpl-tabs.wpc-skin-light ul.wpc-menu li.sign a {
+  color: #000;
+}
+.wpc-current-signature .wpc-tpl-tabs.wpc-skin-light ul.wpc-menu li.sign a:hover {
+  cursor: default;
+  background-color: #f9f9f9;
+}
+.wpc-current-letter .wpc-tpl-tabs ul.wpc-menu li.letter {
+  border-bottom: none;
+}
+.wpc-current-letter .wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu li.letter a {
+  color: #fff;
+}
+.wpc-current-letter .wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu li.letter a:hover {
+  cursor: default;
+  background-color: #373737;
+}
+.wpc-current-letter .wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu li.letter a {
+  color: #f5b70b;
+}
+.wpc-current-letter .wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu li.letter a:hover {
+  cursor: default;
+  background-color: #aca8a2;
+}
+.wpc-current-letter .wpc-tpl-tabs.wpc-skin-light ul.wpc-menu li.letter a {
+  color: #000;
+}
+.wpc-current-letter .wpc-tpl-tabs.wpc-skin-light ul.wpc-menu li.letter a:hover {
+  cursor: default;
+  background-color: #f9f9f9;
+}
+.wpc-current-summary .wpc-tpl-tabs ul.wpc-menu li.summary {
+  border-bottom: none;
+}
+.wpc-current-summary .wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu li.summary a {
+  color: #fff;
+}
+.wpc-current-summary .wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu li.summary a:hover {
+  cursor: default;
+  background-color: #373737;
+}
+.wpc-current-summary .wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu li.summary a {
+  color: #f5b70b;
+}
+.wpc-current-summary .wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu li.summary a:hover {
+  cursor: default;
+  background-color: #aca8a2;
+}
+.wpc-current-summary .wpc-tpl-tabs.wpc-skin-light ul.wpc-menu li.summary a {
+  color: #000;
+}
+.wpc-current-summary .wpc-tpl-tabs.wpc-skin-light ul.wpc-menu li.summary a:hover {
+  cursor: default;
+  background-color: #f9f9f9;
+}
+.wpc-current-summary .wpc-tpl-tabs ul.wpc-menu li.summary {
+  border-bottom: none;
+  font-weight: bold;
+}
+.wpc-current-summary .wpc-tpl-tabs ul.wpc-menu li.summary a:hover {
+  cursor: default;
+}
+/* end menu tab switching section */
+/* switching content section */
+.wpc.wpc-current-summary div.wpc-widget-summary {
+  display: block;
+}
+.wpc.wpc-current-summary div.wpc-widget-signature {
+  display: none;
+}
+.wpc.wpc-current-summary div.wpc-widget-letter {
+  display: none;
+}
+.wpc.wpc-current-signature div.wpc-widget-summary {
+  display: none;
+}
+.wpc.wpc-current-signature div.wpc-widget-signature {
+  display: block;
+}
+.wpc.wpc-current-signature div.wpc-widget-letter {
+  display: none;
+}
+.wpc.wpc-current-letter div.wpc-widget-summary {
+  display: none;
+}
+.wpc.wpc-current-letter div.wpc-widget-signature {
+  display: none;
+}
+.wpc.wpc-current-letter div.wpc-widget-letter {
+  display: block;
+}
+.wpc.wpc-tpl-onlyform div.wpc-widget-signature {
+  display: block;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/* end switching content section */
+/* Class color section */
+.wpc.wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark ul.wpc-menu {
+  border-color: #d9d9d9;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu li,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark ul.wpc-menu li {
+  background-color: #373737;
+  color: #999;
+  border-color: #d9d9d9;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu li a,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark ul.wpc-menu li a {
+  color: #ccc;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark ul.wpc-menu li a:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark ul.wpc-menu li a:hover {
+  background-color: #262626;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter {
+  border-color: #d9d9d9;
+  background-color: #373737;
+  color: #999;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature a,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature a,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary a,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary a,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter a,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter a {
+  color: #3e91cc;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature a img,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature a img,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary a img,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary a img,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter a img,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter a img {
+  border: none;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature h2 a,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature h2 a,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary h2 a,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary h2 a,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter h2 a,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter h2 a {
+  color: #999;
+  font-size: bold;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form p input,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form p input,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form p input,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form p input,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form p input,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form p input,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form p textarea,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form p textarea,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form p textarea,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form p textarea,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form p textarea,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form p textarea,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form p select,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form p select,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form p select,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form p select,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form p select,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form p select {
+  border: 1px solid #616161;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #616161), color-stop(1, #a1a1a1));
+  background: -webkit-linear-gradient(top, #616161 0%, #a1a1a1 100%);
+  background: -moz-linear-gradient(top, #616161 0%, #a1a1a1 100%);
+  background: -o-linear-gradient(top, #616161 0%, #a1a1a1 100%);
+  background: -ms-linear-gradient(top, #616161 0%, #a1a1a1 100%);
+  background: linear-gradient(top, #616161 0%, #a1a1a1 100%);
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form p label.checkbox,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form p label.checkbox,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form p label.checkbox,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form p label.checkbox,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form p label.checkbox,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form p label.checkbox {
+  color: #999;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form p label.checkbox input[type="checkbox"] {
+  background-color: #8d8d8d;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form p ::-webkit-input-placeholder {
+  color: #373737;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form p :-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form p :-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form p :-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form p :-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form p :-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form p :-moz-placeholder {
+  color: #373737;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form p ::-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form p ::-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form p ::-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form p ::-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form p ::-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form p ::-moz-placeholder {
+  color: #373737;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form p :-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form p :-ms-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form p :-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form p :-ms-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form p :-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form p :-ms-input-placeholder {
+  color: #373737;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form input[type="reset"],
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form input[type="reset"],
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form input[type="reset"],
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form input[type="reset"],
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form input[type="reset"],
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form input[type="reset"],
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form input[type="submit"],
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form input[type="submit"],
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form input[type="submit"],
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form input[type="submit"],
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form input[type="submit"],
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form input[type="submit"] {
+  -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 -2px 0 rgba(0,0,0,0.5);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6ab5e9), color-stop(1, #277ab6));
+  background: -webkit-linear-gradient(top, #6ab5e9 0%, #277ab6 100%);
+  background: -moz-linear-gradient(top, #6ab5e9 0%, #277ab6 100%);
+  background: -o-linear-gradient(top, #6ab5e9 0%, #277ab6 100%);
+  background: -ms-linear-gradient(top, #6ab5e9 0%, #277ab6 100%);
+  background: linear-gradient(top, #6ab5e9 0%, #277ab6 100%);
+  color: #fff;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form input[type="reset"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form input[type="reset"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form input[type="reset"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form input[type="reset"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form input[type="reset"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form input[type="reset"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form input[type="submit"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form input[type="submit"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form input[type="submit"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form input[type="submit"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form input[type="submit"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form input[type="submit"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form input[type="reset"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form input[type="reset"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form input[type="reset"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form input[type="reset"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form input[type="reset"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form input[type="reset"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-signature form input[type="submit"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-signature form input[type="submit"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-summary form input[type="submit"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-summary form input[type="submit"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-dark .wpc-widget-letter form input[type="submit"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-dark .wpc-widget-letter form input[type="submit"]:focus {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #277ab6), color-stop(1, #6ab5e9));
+  background: -webkit-linear-gradient(top, #277ab6 0%, #6ab5e9 100%);
+  background: -moz-linear-gradient(top, #277ab6 0%, #6ab5e9 100%);
+  background: -o-linear-gradient(top, #277ab6 0%, #6ab5e9 100%);
+  background: -ms-linear-gradient(top, #277ab6 0%, #6ab5e9 100%);
+  background: linear-gradient(top, #277ab6 0%, #6ab5e9 100%);
+  outline: none;
+  border: none;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey ul.wpc-menu {
+  border-color: #9c978f;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu li,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey ul.wpc-menu li {
+  background-color: #aca8a2;
+  color: #fff;
+  border-color: #9c978f;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu li a,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey ul.wpc-menu li a {
+  color: #fff;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey ul.wpc-menu li a:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey ul.wpc-menu li a:hover {
+  background-color: #9b9791;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter {
+  border-color: #9c978f;
+  background-color: #aca8a2;
+  color: #fff;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature a,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature a,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary a,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary a,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter a,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter a {
+  color: #322e29;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature a img,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature a img,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary a img,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary a img,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter a img,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter a img {
+  border: none;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature h2 a,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature h2 a,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary h2 a,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary h2 a,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter h2 a,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter h2 a {
+  color: #fff;
+  font-size: bold;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form p input,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form p input,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form p input,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form p input,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form p input,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form p input,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form p select,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form p select,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form p select,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form p select,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form p select,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form p select,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form p textarea,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form p textarea,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form p textarea,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form p textarea,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form p textarea,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form p textarea {
+  border: 1px solid #645d51;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4d473e), color-stop(1, #2f2b26));
+  background: -webkit-linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+  background: -moz-linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+  background: -o-linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+  background: -ms-linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+  background: linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form p label.checkbox,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form p label.checkbox,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form p label.checkbox,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form p label.checkbox,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form p label.checkbox,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form p label.checkbox {
+  color: #49433b;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form p label.checkbox input[type="checkbox"],
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form p label.checkbox input[type="checkbox"] {
+  background-color: #49433b;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form p ::-webkit-input-placeholder {
+  color: #fff;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form p :-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form p :-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form p :-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form p :-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form p :-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form p :-moz-placeholder {
+  color: #fff;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form p ::-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form p ::-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form p ::-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form p ::-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form p ::-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form p ::-moz-placeholder {
+  color: #fff;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form p :-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form p :-ms-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form p :-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form p :-ms-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form p :-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form p :-ms-input-placeholder {
+  color: #fff;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form input[type="reset"],
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form input[type="reset"],
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form input[type="reset"],
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form input[type="reset"],
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form input[type="reset"],
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form input[type="reset"],
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form input[type="submit"],
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form input[type="submit"],
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form input[type="submit"],
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form input[type="submit"],
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form input[type="submit"],
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form input[type="submit"] {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4d473e), color-stop(1, #2f2b26));
+  background: -webkit-linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+  background: -moz-linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+  background: -o-linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+  background: -ms-linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+  background: linear-gradient(top, #4d473e 0%, #2f2b26 100%);
+  color: #fff;
+  border: 1px solid #0f0f0f;
+  text-shadow: 0 1px 0 #312c27;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form input[type="reset"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form input[type="reset"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form input[type="reset"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form input[type="reset"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form input[type="reset"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form input[type="reset"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form input[type="submit"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form input[type="submit"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form input[type="submit"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form input[type="submit"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form input[type="submit"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form input[type="submit"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form input[type="reset"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form input[type="reset"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form input[type="reset"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form input[type="reset"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form input[type="reset"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form input[type="reset"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-signature form input[type="submit"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-signature form input[type="submit"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-summary form input[type="submit"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-summary form input[type="submit"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-grey .wpc-widget-letter form input[type="submit"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-grey .wpc-widget-letter form input[type="submit"]:focus {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2f2b26), color-stop(1, #4d473e));
+  background: -webkit-linear-gradient(top, #2f2b26 0%, #4d473e 100%);
+  background: -moz-linear-gradient(top, #2f2b26 0%, #4d473e 100%);
+  background: -o-linear-gradient(top, #2f2b26 0%, #4d473e 100%);
+  background: -ms-linear-gradient(top, #2f2b26 0%, #4d473e 100%);
+  background: linear-gradient(top, #2f2b26 0%, #4d473e 100%);
+  outline: none;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light ul.wpc-menu,
+.wpc.wpc-tpl-onlyform.wpc-skin-light ul.wpc-menu {
+  border-color: #d9d9d9;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light ul.wpc-menu li,
+.wpc.wpc-tpl-onlyform.wpc-skin-light ul.wpc-menu li {
+  background-color: #f9f9f9;
+  color: #444;
+  border-color: #d9d9d9;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light ul.wpc-menu li a,
+.wpc.wpc-tpl-onlyform.wpc-skin-light ul.wpc-menu li a {
+  color: #5e5e5e;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light ul.wpc-menu li a:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-light ul.wpc-menu li a:hover {
+  background-color: #e8e8e8;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter {
+  border-color: #d9d9d9;
+  background-color: #f9f9f9;
+  color: #444;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature a,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature a,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary a,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary a,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter a,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter a {
+  color: #399;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature a img,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature a img,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary a img,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary a img,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter a img,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter a img {
+  border: none;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature h2 a,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature h2 a,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary h2 a,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary h2 a,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter h2 a,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter h2 a {
+  color: #444;
+  font-size: bold;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form p input,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form p input,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form p input,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form p input,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form p input,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form p input,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form p textarea,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form p textarea,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form p textarea,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form p textarea,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form p textarea,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form p textarea,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form p select,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form p select,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form p select,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form p select,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form p select,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form p select {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form p label input[type="checkbox"],
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form p label input[type="checkbox"],
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form p label input[type="checkbox"],
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form p label input[type="checkbox"],
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form p label input[type="checkbox"],
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form p label input[type="checkbox"] {
+  background-color: #f5f5f5;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form p ::-webkit-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form p ::-webkit-input-placeholder {
+  color: #444;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form p :-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form p :-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form p :-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form p :-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form p :-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form p :-moz-placeholder {
+  color: #444;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form p ::-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form p ::-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form p ::-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form p ::-moz-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form p ::-moz-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form p ::-moz-placeholder {
+  color: #444;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form p :-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form p :-ms-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form p :-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form p :-ms-input-placeholder,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form p :-ms-input-placeholder,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form p :-ms-input-placeholder {
+  color: #444;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form input[type="reset"],
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form input[type="reset"],
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form input[type="reset"],
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form input[type="reset"],
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form input[type="reset"],
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form input[type="reset"],
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form input[type="submit"],
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form input[type="submit"],
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form input[type="submit"],
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form input[type="submit"],
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form input[type="submit"],
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form input[type="submit"] {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #dedede));
+  background: -webkit-linear-gradient(top, #fff 0%, #dedede 100%);
+  background: -moz-linear-gradient(top, #fff 0%, #dedede 100%);
+  background: -o-linear-gradient(top, #fff 0%, #dedede 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #dedede 100%);
+  background: linear-gradient(top, #fff 0%, #dedede 100%);
+  color: #444;
+  border: 1px solid #ccc;
+  text-shadow: 0 1px 0 #fff;
+}
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form input[type="reset"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form input[type="reset"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form input[type="reset"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form input[type="reset"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form input[type="reset"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form input[type="reset"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form input[type="submit"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form input[type="submit"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form input[type="submit"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form input[type="submit"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form input[type="submit"]:hover,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form input[type="submit"]:hover,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form input[type="reset"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form input[type="reset"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form input[type="reset"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form input[type="reset"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form input[type="reset"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form input[type="reset"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-signature form input[type="submit"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-signature form input[type="submit"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-summary form input[type="submit"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-summary form input[type="submit"]:focus,
+.wpc.wpc-tpl-tabs.wpc-skin-light .wpc-widget-letter form input[type="submit"]:focus,
+.wpc.wpc-tpl-onlyform.wpc-skin-light .wpc-widget-letter form input[type="submit"]:focus {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dedede), color-stop(1, #fff));
+  background: -webkit-linear-gradient(top, #dedede 0%, #fff 100%);
+  background: -moz-linear-gradient(top, #dedede 0%, #fff 100%);
+  background: -o-linear-gradient(top, #dedede 0%, #fff 100%);
+  background: -ms-linear-gradient(top, #dedede 0%, #fff 100%);
+  background: linear-gradient(top, #dedede 0%, #fff 100%);
+  outline: none;
+}
