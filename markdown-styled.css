@@ -1,0 +1,20 @@
+html {
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+	border-top: 8px solid #660d20;
+}
+
+body {
+	border-top: 12px solid #cd1b40;
+	margin: 0px;
+	padding: 10%;
+}
+
+* {
+	font-family: Cabin, Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
