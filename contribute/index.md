@@ -3,12 +3,12 @@ title: How to Contribute
 layout: default
 ---
 
-How to work:
+Here's how we work.
 
-1. politely, in aggregate, request data
-2. use it
-3. contribute better data
-4. build things and a reputation for open-data success
+1. politely, in aggregate with the rest of the group, request data,
+2. use data and make it better,
+3. contribute data back,
+4. build things and a build a reputation for open-data success.
 
 We think it's our task to use public data in novel ways. One obstacle is that
 leaving data hidden in a (metaphorical) vault is much easier than building a
