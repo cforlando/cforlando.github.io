@@ -1,0 +1,5 @@
+highlighter: pygments
+github: [Repository metadata]
+
+safe: true
+lsi: false
