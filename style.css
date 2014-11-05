@@ -374,7 +374,6 @@ hr {
 }
 a {
   color: #00cbe9;
-  text-decoration: none;
 }
 a:hover {
   color: #00a9c7;
@@ -405,14 +404,6 @@ h6 {
   font-family: "Bitter", sans-serif;
   color: #000000;
   margin: 0 0 .618em;
-}
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  text-decoration: none;
 }
 h1 a:hover,
 h2 a:hover,
@@ -597,7 +588,6 @@ body.has-top-nav #header {
   color: #000000;
   text-transform: none;
   font-weight: normal;
-  text-decoration: none;
 }
 #header .site-title a:hover,
 #header .site-description a:hover {
@@ -617,7 +607,6 @@ body.has-top-nav #header {
   text-decoration: underline;
 }
 #header p a:hover {
-  text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
   #header p {
@@ -1100,7 +1089,6 @@ body.page-template-template-blog-php .type-testimonial {
 .type-feature .post-category a:hover,
 .type-testimonial .post-category a:hover,
 .article-content .post-category a:hover {
-  text-decoration: none;
   color: #111111;
   border: 1px solid #c5c5c5;
 }
@@ -1316,7 +1304,6 @@ body.page-template-template-blog-php .type-testimonial {
 .nav-entries a span.nav-next {
   display: block;
   color: #111111;
-  text-decoration: none;
   padding: .857em 1.387em;
   font-weight: bold;
   background: #f5f5f5;
@@ -1347,7 +1334,6 @@ body.page-template-template-blog-php .type-testimonial {
 #post-entries .nav-next a {
   display: block;
   color: #111111;
-  text-decoration: none;
   padding: .857em 1.387em;
   font-weight: bold;
   background: #f5f5f5;
@@ -1392,7 +1378,6 @@ body.page-template-template-blog-php .type-testimonial {
 .woo-pagination .page-numbers {
   line-height: 3.5;
   display: inline;
-  text-decoration: none;
   color: #777777;
   margin: 0 0 0 -4px;
   padding: .857em 1.387em;
@@ -1488,7 +1473,6 @@ body.page-template-template-blog-php .type-testimonial {
   filter: alpha(opacity=@opacity * 100);
 }
 #connect .social a:hover {
-  text-decoration: none;
 }
 #connect .social a:before {
   font-family: Social;
@@ -1593,7 +1577,6 @@ body.page-template-template-blog-php .type-testimonial {
   padding: .53em 0;
 }
 .widget ul li a {
-  text-decoration: none;
 }
 .widget ul li a:hover {
   text-decoration: underline;
@@ -1805,7 +1788,6 @@ body.page-template-template-blog-php .type-testimonial {
   background-clip: padding-box;
 }
 .tag_cloud a:hover {
-  text-decoration: none;
   background: #cccccc;
 }
 /* Adspace */
@@ -2225,7 +2207,6 @@ body.page-template-template-blog-php .type-testimonial {
 }
 #comments .navigation a {
   display: block;
-  text-decoration: none;
 }
 #comments .pingbacks li.pingback {
   margin: 0 0 1.618em;
@@ -2376,7 +2357,6 @@ body.page-template-template-blog-php .type-testimonial {
   padding-left: 1.236em;
 }
 #archives .archives_list .comments a:hover {
-  text-decoration: none;
 }
 #archives .archives_list .comments a:after {
   font-family: 'FontAwesome';
@@ -2853,9 +2833,6 @@ html[xmlns] .flexslider .slides {
   color: #fff;
   text-align: center!important;
   visibility: visible;
-}
-.flex-direction-nav a:hover {
-  text-decoration: none;
 }
 .flex-direction-nav .flex-next {
   right: 0;
