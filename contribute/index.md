@@ -1,6 +1,6 @@
 ---
 title: How to Contribute
-layout:
+layout: default
 ---
 
 How to work:
