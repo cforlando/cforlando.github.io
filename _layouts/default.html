@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
-<title>Code for Orlando, {{ title }}</title>
-
-<link rel="stylesheet" href="/fonts.css" type="text/css">
-<link rel="stylesheet" href="../markdown-styled.css" type="text/css" media="all">
-
-<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+<title>Code for Orlando, {{ page.title }}</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/fonts.css"           type="text/css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/markdown-styled.css" type="text/css" media="all" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 </head>
 
-<h1>{{ title }}</h1>
+<h1>{{ page.title }}</h1>
 
 <body id="markupresult">
 {{ content }}

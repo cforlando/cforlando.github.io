@@ -6,9 +6,10 @@ html {
 }
 
 body {
-	border-top: 12px solid #cd1b40;
 	margin: 0px;
 	padding: 5% 10%;
+	border-top: 12px solid #cd1b40;
+	font-size: 12px;
 }
 
 * {
@@ -20,6 +21,5 @@ h1 {
 }
 
 hr {
-	width: 50%;
-	height: 0.7px;
+	width: 10%;
 }
