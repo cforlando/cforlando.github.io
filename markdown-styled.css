@@ -23,3 +23,24 @@ h1 {
 hr {
 	width: 10%;
 }
+
+footer#thanks {
+	border-top: thin solid black;
+	margin-top: 8em;
+	background-color: silver;
+	display: none;
+}
+
+footer#thanks div {
+	content:before: '"Thanks!"';
+	border: thin solid gray;
+	border-radius: 20px;
+}
+
+footer#thanks div img {
+	width: 50%;
+	float: right;
+	padding: 3px;
+	margin: 0px;
+	border: 1px solid gray;
+}

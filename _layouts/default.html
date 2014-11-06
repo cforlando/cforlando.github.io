@@ -11,6 +11,24 @@
 
 <body id="markupresult">
 {{ content }}
+
+<footer id="thanks">
+</footer>
 </body>
 
+
+<script>
+var members = {{ site.organization_members }};
+var footer = document.getElementById("thanks");
+if (footer) {
+	var thanksbubble = document.createElement('div');
+	members.forEach(function (member) {
+			var person = document.createElement("img");
+			person.setAttribute("src", member.avatar_url);
+			person.setAttribute("class", "memberface");
+			thanksbubble.appendChild(person);
+	});
+	footer.appendChild(thanksbubble);
+}
+</script>
 </html>
