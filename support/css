@@ -3,7 +3,7 @@
   font-family: 'Cabin';
   font-style: normal;
   font-weight: 400;
-  src: local('Cabin Regular'), local('Cabin-Regular'), url(http://fonts.gstatic.com/s/cabin/v7/YW3SmFCeLOkefBVkMNxbtw.woff2) format('woff2');
+  src: local('Cabin Regular'), local('Cabin-Regular'), url(http://fonts.gstatic.com/s/cabin/v7/yQOMOX5hR0-6LTD879t-PQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -11,7 +11,7 @@
   font-family: 'Cabin';
   font-style: normal;
   font-weight: 700;
-  src: local('Cabin Bold'), local('Cabin-Bold'), url(http://fonts.gstatic.com/s/cabin/v7/82B-3YlzWJm8zbCrVEmc_hTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  src: local('Cabin Bold'), local('Cabin-Bold'), url(http://fonts.gstatic.com/s/cabin/v7/82B-3YlzWJm8zbCrVEmc_vesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -19,7 +19,7 @@
   font-family: 'Cabin';
   font-style: italic;
   font-weight: 400;
-  src: local('Cabin Italic'), local('Cabin-Italic'), url(http://fonts.gstatic.com/s/cabin/v7/6rRVd2AaRJ0MqBftQKms6vY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  src: local('Cabin Italic'), local('Cabin-Italic'), url(http://fonts.gstatic.com/s/cabin/v7/00o5zQ7GoPVPMQsCfDCAnw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -27,6 +27,6 @@
   font-family: 'Cabin';
   font-style: italic;
   font-weight: 700;
-  src: local('Cabin Bold Italic'), local('Cabin-BoldItalic'), url(http://fonts.gstatic.com/s/cabin/v7/Ww23LQNlhn4dAm9uegPaXyEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  src: local('Cabin Bold Italic'), local('Cabin-BoldItalic'), url(http://fonts.gstatic.com/s/cabin/v7/Ww23LQNlhn4dAm9uegPaX_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
