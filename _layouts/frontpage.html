@@ -83,16 +83,11 @@ body { font:normal 1.4em/1.5em 'Cabin', arial, sans-serif;color:#111111; }
 <div id="wrapper" class="loaded">
 	<div id="top">
 		<nav class="col-full" role="navigation">
-			<ul id="top-nav" class="nav"><li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-22"><a href="./support/cfo.html">Home</a></li>
-        <li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-25"><a href="http://codefororlando.com/#page-content">Help Out</a></li>
-        <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-24"><a href="http://codefororlando.com/#features">What We Do</a></li>
-        <li id="menu-item-199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-199"><a href="https://github.com/cforlando/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-widget&#39;, &#39;https://github.com/cforlando/&#39;, &#39;Projects&#39;]);">Projects</a></li>
-        <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="http://codefororlando.com/data-sources/">Data Sources</a></li>
-        <li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-26"><a href="http://codefororlando.com/#contact-area">Contact Us</a></li>
-        <li id="menu-item-175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-175"><a href="https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-widget&#39;, &#39;https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando&#39;, &#39;Data Sets&#39;]);">Data Sets</a></li>
-        <li id="menu-item-178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-178"><a href="http://www.meetup.com/Code-For-Orlando/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-widget&#39;, &#39;http://www.meetup.com/Code-For-Orlando/&#39;, &#39;Meet Ups&#39;]);">Meet Ups</a></li>
-        <li id="menu-item-198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-198"><a href="https://github.com/cforlando/codeofconduct" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-widget&#39;, &#39;https://github.com/cforlando/codeofconduct&#39;, &#39;Code of Conduct&#39;]);">Code of Conduct</a></li>
-      </ul>
+		<ul id="top-nav" class="nav">
+			{% for pair in page.topmenu %}
+			<li><a href="{{ pair[1] }}">{{ pair[0] }}</a></li>
+			{% endfor %}
+		</ul>
     </nav>
 	</div><!-- /#top -->
  
