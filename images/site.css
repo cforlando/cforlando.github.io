@@ -28,7 +28,7 @@ section#focuslist ul li {
 
 nav {
 	background: rgba(0, 0, 0, 0.5);
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -43,6 +43,11 @@ nav {
 
 nav, nav a {
 	color: white;
+	text-decoration: none;
+}
+
+nav a:active {
+	background-color: black;
 }
 
 nav ul {
