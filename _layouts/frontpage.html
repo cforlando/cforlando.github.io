@@ -10,7 +10,18 @@
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:url" content="http://codefororlando.com">
 <meta property="og:site_name" content="Code for Orlando">
-<div class="fit-vids-style">­<style>               .fluid-width-video-wrapper {                 width: 100%;                              position: relative;                       padding: 0;                            }                                                                                   .fluid-width-video-wrapper iframe,        .fluid-width-video-wrapper object,        .fluid-width-video-wrapper embed {           position: absolute;                       top: 0;                                   left: 0;                                  width: 100%;                              height: 100%;                          }                                       </style></div><script type="text/javascript" async="" src="./support/ga.js"></script><script type="application/ld+json">{ "@context": "http://schema.org", "@type": "WebSite", "url": "http://codefororlando.com/", "potentialAction": { "@type": "SearchAction", "target": "http://codefororlando.com/?s={search_term}", "query-input": "required name=search_term" } }</script>
+
+<style>
+.fluid-width-video-wrapper {
+	width: 100%;
+	position: relative;
+	padding: 0;
+}
+</style>
+<script type="text/javascript" async="" src="./support/ga.js"></script>
+<script type="application/ld+json">
+	{ "@context": "http://schema.org", "@type": "WebSite", "url": "http://codefororlando.com/", "potentialAction": { "@type": "SearchAction", "target": "http://codefororlando.com/?s={search_term}", "query-input": "required name=search_term" } }
+</script>
 
 <link rel="stylesheet" id="theme-stylesheet-css" href="./support/style.css" type="text/css" media="all">
 <link rel="stylesheet" id="woo-layout-css" href="./support/layout.css" type="text/css" media="all">
@@ -40,8 +51,6 @@
 <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<!--  Mobile viewport scale | Disable user zooming as the layout is optimised -->
-<meta content="initial-scale=1.0; maximum-scale=1.0; user-scalable=no" name="viewport">
 <style type="text/css">
 #header  {
 	background-color: #cf1b41!important;
@@ -80,126 +89,54 @@ body { font:normal 1.4em/1.5em 'Cabin', arial, sans-serif;color:#111111; }
 </head>
 
 <body class="home blog chrome alt-style-grey_red has-top-nav layout-left-content">
-<div id="wrapper" class="loaded">
 	<div id="top">
 		<nav class="col-full" role="navigation">
-		<ul id="top-nav" class="nav">
-			{% for pair in page.mainmenu %}
-			<li><a href="{{ pair[1] }}">{{ pair[0] }}</a></li>
-			{% endfor %}
-		</ul>
-    </nav>
+			<ul id="top-nav" class="nav">
+				{% for pair in page.mainmenu %}
+				<li><a href="{{ pair[1] }}">{{ pair[0] }}</a></li>
+				{% endfor %}
+			</ul>
+    		</nav>
 	</div><!-- /#top -->
- 
-	<header id="header">
-		<div class="col-full">
-			<hgroup>
-				<h1 class="site-title"><a href="./support/cfo.html">{{ page.title }}</a></h1>
-				<h2 class="site-description">{{ page.subtitle }}</h2>
-			</hgroup>
-			<p>{{ page.subtitle }}</p>
-		</div>
-	</header><!-- /#header -->
 
-<div id="content" class="home-widgets">
-				
-<div id="posts-timeline" class="widget_woo_component">
-	<div class="col-full">
-		<span class="heading">Posts Timeline</span>
+<article>
 
-		<h2 class="widget-title">A timeline view of recent posts</h2>
-		    	<a class="timeline-post" href="http://codefororlando.com/2014/05/31/petition-for-an-open-data-proclamation/" rel="bookmark" title="Petition for an Open Data Proclamation">
-					<span class="date">May 31, 2014</span>
-					<span class="title">Petition for an Open Data Proclamation</span>
-				</a>
-		
-		    		
-		    	<a class="timeline-post" href="http://codefororlando.com/2014/05/29/national-day-of-civic-hacking-2014/" rel="bookmark" title="National Day of Civic Hacking 2014">
-					<span class="date">May 29, 2014</span>
-					<span class="title">National Day of Civic Hacking 2014</span>
-				</a>
-		    		
-		    	<a class="timeline-post" href="http://codefororlando.com/2013/05/23/national-day-of-civic-hacking/" rel="bookmark" title="National Day of Civic Hacking">
-					<span class="date">May 23, 2013</span>
-					<span class="title">National Day of Civic Hacking</span>
-				</a>
-	</div>
-</div>
+<header>
+	<hgroup>
+		<h1 class="site-title"><a href="./support/cfo.html">{{ page.title }}</a></h1>
+		<h2 class="site-description">{{ page.subtitle }}</h2>
+	</hgroup>
+	<p>{{ page.subtitle }}</p>
+</header>
 
-<div id="page-content" class="widget_woo_component">
-	<div class="col-full layout-full">
-		<div id="main" class="col-left">
-		
-			<article>
+<section>
+	<header>
+		<h2>{{ page.focuspoints.title }}</h2>
+		<p class="subtitle">{{ page.focuspoints.subtitle }}</p>
+	</header>
 
-				
-				<div class="article-content">
-
-					<header>
-						<h1>Participate</h1>
-					</header>
-
-					<section class="entry">
-{{ content }}
-
-<div id="content" class="home-widgets">
-<div id="features" class="widget_woo_component widget_woothemes_features">
-<div class="col-full">
-<h2 class="widget-title">{{ page.focuspoints.title }}</h2>
-<div class="features">
-	
 {% for focusitem in page.focuspoints.items %}
-<div class="feature">
-<p><img src="{{ focusitem[1].icon }}" alt="data" width="77" height="80"></p>
-<h3 class="feature-title">{{ focusitem[1].title }}</h3>
-<div class="feature-content">{{ focusitem[1].description }}</div>
-</div>
+	<div class="feature">
+		<p><img src="{{ focusitem[1].icon }}" alt="data" width="77" height="80"></p>
+		<h3 class="feature-title">{{ focusitem[1].title }}</h3>
+		<div class="feature-content">{{ focusitem[1].description }}</div>
+	</div>
 {% endfor %}
+</section>
 
-<div class="fix"></div>
-</div>
-</div>
-</div>
-<p><!-- /#home-widgets --></p>
-</div>
-					</section>
+<section>
+	<header>
+		<h2>Contact Code For Orlando</h2>
+		<p class="subtitle">Get In Touch</p>
+	</header>
 
-				</div>
+	<ul class="social">
+		<li><a href="http://www.twitter.com/codefororlando" title="Send us a message via Twitter" class="twitter"><span>Follow Code for Orlando on Twitter</span></a></li>
+		<li><a href="https://www.facebook.com/codefororlando" title="Send us a message on Facebook" class="facebook"><span>Like Code for Orlando on Facebook</span></a></li>
+		<li><a href="https://www.youtube.com/channel/UCrEAf9d6hS4C0EMbntSlDdQ/feed" title="Watch Code for Orlando on YouTube" class="youtube"><span>Watch Code for Orlando on YouTube</span></a></li>
+	</ul>
+</section>
 
-			</article>
+</article>
 
-			<div class="fix"></div>
-
-				</div><!--/#main .col-left-->
-			</div>
-</div>
-
-<div id="contact-area" class="widget_woo_component">
-
-    <div class="col-full">
-
-		<section class="entry">
-
-    	<span class="heading">Contact Code For Orlando</span>
-
-		<h2 class="widget-title">Get In Touch</h2>
-    	<div id="connect">
-<div class="social">
-<a href="http://www.twitter.com/codefororlando" title="Send us a message via Twitter" class="twitter"><span>Follow Code for Orlando on Twitter</span></a>
-<a href="https://www.facebook.com/codefororlando" title="Send us a message on Facebook" class="facebook"><span>Like Code for Orlando on Facebook</span></a>
-<a href="http://codefororlando.com/feed/" title="Subscribe to our RSS feed" class="subscribe"><span>Subscribe to our RSS feed</span></a>
-<a href="https://www.youtube.com/channel/UCrEAf9d6hS4C0EMbntSlDdQ/feed" title="Watch Code for Orlando on YouTube" class="youtube"><span>Watch Code for Orlando on YouTube</span></a>
-</div>
-</div>
-
-			<p>
-			Tweet to @codefororlando or send a message to <a href="https://www.facebook.com/codefororlando">cforlando on Facebook</a>.
-			</p>
-
-    	    </div>
-		</section>
-
-</div>
-	</div><!-- /#home-widgets -->
-
-</div></body></html>
+</body></html>
