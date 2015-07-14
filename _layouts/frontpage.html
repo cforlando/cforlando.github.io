@@ -119,12 +119,14 @@ body { font:normal 1.4em/1.5em 'Cabin', arial, sans-serif;color:#111111; }
 		<p class="subtitle">{{ page.focuspoints.subtitle }}</p>
 	</header>
 
+	<ul>
 {% for focusitem in page.focuspoints.items %}
-	<div class="feature">
-		<p><img src="{{ focusitem[1].icon }}" alt="data" width="77" height="80"></p>
-		<h3 class="feature-title">{{ focusitem[1].title }}</h3>
-		<div class="feature-content">{{ focusitem[1].description }}</div>
-	</div>
+		<li class="feature">
+			<p><img src="{{ focusitem[1].icon }}" alt="data" width="77" height="80"></p>
+			<h3 class="feature-title">{{ focusitem[1].title }}</h3>
+			<div class="feature-content">{{ focusitem[1].description }}</div>
+		</li>
+	</ul>
 {% endfor %}
 </section>
 
