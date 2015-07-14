@@ -30,20 +30,13 @@ body article {
 
 section#focuslist ul {
  	display: table;
+ 	text-align: center;
+ 	font-size: smaller;
 }
 
 section#focuslist ul li {
 	padding: 2ex;
  	display: table-cell;
- 	font-size: smaller;
-}
-
-section#focuslist ul li > p {
-	text-align: center;
-}
-
-section#focuslist h1, section#focuslist h2  {
-	text-align: center;
 }
 
 nav {
