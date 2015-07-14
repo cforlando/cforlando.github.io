@@ -8,10 +8,8 @@ html#frontpage body {
 }
 
 body {
-	background: white;
+	background: purple;
 	font: normal 1.4em/1.5em 'Cabin', arial, sans-serif;
-	margin: 0px;
-	padding: 0px;
 }
 
 html#frontpage > body {
