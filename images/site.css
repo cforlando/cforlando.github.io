@@ -9,7 +9,12 @@ html#frontpage body {
 
 body {
 	background: purple;
-	font: normal 1.4em/1.5em 'Cabin', arial, sans-serif;
+	font: normal 1.4em/1.5em "Cabin", arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Bitter", serif;
+	font-weight: 700;
 }
 
 html#frontpage > body > article > header > hgroup {
@@ -19,7 +24,7 @@ html#frontpage > body > article > header > hgroup {
 body article {
 	margin: 2ex auto;
 	width: 70%;
-	max-width: 900px;
+	max-width: 1400px;
 }
 
 section#focuslist ul {
@@ -27,7 +32,12 @@ section#focuslist ul {
 }
 
 section#focuslist ul li {
+	padding: 2ex;
  	display: table-cell;
+}
+
+section#focuslist ul li > p {
+	text-align: center;
 }
 
 nav {
