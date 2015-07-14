@@ -1,0 +1,9 @@
+
+section#focuslist ul {
+  display: table;
+}
+
+section#focuslist ul li {
+  display: table-cell;
+}
+
