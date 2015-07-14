@@ -1,3 +1,11 @@
+body {
+  background-color: red;
+}
+
+body article {
+  background-color: green;
+}
+
 body article header {
   background-color: #f18903;
   background: url(/images/logo1-1024x327.png) top center no-repeat;
