@@ -22,6 +22,7 @@ section#focuslist ul li {
 
 nav {
 	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -31,18 +32,17 @@ nav {
 	box-sizing: border-box;
 	font-family: "Open Sans", sans-serif;
 	text-align: center;
+	font-size: smaller;
 }
 
 nav ul {
 	display: block;
-	
 }
 
 nav ul li {
 	position: relative;
 	display: inline-block;
-	zoom: 1;
 	list-style: none;
-	margin: 2ex;
+	margin: 0.2ex 1.2ex;
 	text-align: center
 }
