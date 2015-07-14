@@ -26,9 +26,8 @@ section#focuslist ul li {
  	display: table-cell;
 }
 
-nav, nav a {
+nav {
 	background: rgba(0, 0, 0, 0.5);
-	color: white;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -40,6 +39,10 @@ nav, nav a {
 	font-family: "Open Sans", sans-serif;
 	text-align: center;
 	font-size: smaller;
+}
+
+nav, nav a {
+	color: white;
 }
 
 nav ul {
