@@ -19,3 +19,26 @@ section#focuslist ul {
 section#focuslist ul li {
   display: table-cell;
 }
+
+nav {
+	background: rgba(0, 0, 0, 0.5);
+  background: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9995;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav ul {
+	display: block;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  zoom: 1;
+  list-style: none;
+}
