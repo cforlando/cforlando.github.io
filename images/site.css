@@ -1,7 +1,11 @@
 html#frontpage {
 	background: #f18903 url(/images/logo1-1024x327.png) top center no-repeat;
+}
+
+html#frontpage body {
 	margin: 327px 0px 0px 0px;
 }
+
 
 body {
 	background: white;
