@@ -2,6 +2,15 @@
 title: Code for Orlando
 subtitle: power of the woo
 layout: frontpage
+topmenu:
+  Home: #page-content
+  What We Do: #features
+  Projects: https://github.com/cforlando/
+  Data Sources: https://github.com/cforlando/
+  Contact Us: #contact-area
+  Data Sets: https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando
+  Meet Ups: http://www.meetup.com/Code-For-Orlando/
+  Code of Conduct: https://github.com/cforlando/codeofconduct
 focuspoints:
   title: Our focus
   items:
