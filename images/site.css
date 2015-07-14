@@ -3,8 +3,8 @@ html#frontpage {
 }
 
 html#frontpage body {
-	padding: 220px 0px 0px 0px;
-	background-color: green;
+	margin: 250px 0px 0px 0px;
+	background-color: white;
 }
 
 body {
@@ -18,7 +18,8 @@ html#frontpage > body > article > header > hgroup {
 
 body article {
 	margin: 2ex auto;
-	width: 80%;
+	width: 70%;
+	max-width: 900px;
 }
 
 section#focuslist ul {
