@@ -6,7 +6,10 @@ body > article > header {
   background-color: #f18903;
   background: url(/images/logo1-1024x327.png) top center no-repeat;
   height: 170px;
-	text-shadow: 1px 1px 0 #333333;
+}
+
+body > article > header hgroup {
+	display: none;
 }
 
 section#focuslist ul {
