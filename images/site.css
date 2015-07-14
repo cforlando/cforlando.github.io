@@ -4,6 +4,7 @@ html#frontpage {
 
 html#frontpage body {
 	padding: 220px 0px 0px 0px;
+	background-color: green;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 }
 
 html#frontpage > body {
+	background-color: blue;
 	margin: 5ex 15% 2% 15%;
 }
 
