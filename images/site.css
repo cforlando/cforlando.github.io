@@ -22,7 +22,8 @@ html#frontpage > body > article > header > hgroup {
 }
 
 body article {
-	margin: 2ex auto;
+	padding: 2em;
+	margin: 0px auto;
 	width: 70%;
 	max-width: 1400px;
 }
@@ -34,9 +35,14 @@ section#focuslist ul {
 section#focuslist ul li {
 	padding: 2ex;
  	display: table-cell;
+ 	font-size: smaller;
 }
 
 section#focuslist ul li > p {
+	text-align: center;
+}
+
+section#focuslist h1, section#focuslist h2  {
 	text-align: center;
 }
 
