@@ -12,11 +12,6 @@ body {
 	font: normal 1.4em/1.5em 'Cabin', arial, sans-serif;
 }
 
-html#frontpage > body {
-	background-color: blue;
-	margin: 5ex 15% 2% 15%;
-}
-
 html#frontpage > body > article > header > hgroup {
 	display: none;
 }
