@@ -1,15 +1,12 @@
 body {
-  background-color: red;
+  font: normal 1.4em/1.5em 'Cabin', arial, sans-serif;
 }
 
-body article {
-  background-color: green;
-}
-
-body article header {
+body > article > header {
   background-color: #f18903;
   background: url(/images/logo1-1024x327.png) top center no-repeat;
   height: 170px;
+	text-shadow: 1px 1px 0 #333333;
 }
 
 section#focuslist ul {
@@ -19,4 +16,3 @@ section#focuslist ul {
 section#focuslist ul li {
   display: table-cell;
 }
-
