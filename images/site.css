@@ -1,10 +1,19 @@
+html {
+	background: #f18903;
+}
+
 html#frontpage {
 	background: #f18903 url(/images/logo1-1024x327.png) top center no-repeat;
 }
 
+html body {
+	margin: 70px 0px 0px 0px;
+	background-color: white;
+	min-height: 90vh;
+}
+
 html#frontpage body {
 	margin: 270px 0px 0px 0px;
-	background-color: white;
 }
 
 body {
@@ -25,6 +34,11 @@ body article {
 	margin: 0px auto;
 	width: 70%;
 	max-width: 1400px;
+}
+
+article > section {
+	margin-top: 2em;
+	/* border-top: 1px solid silver; */
 }
 
 section#focuslist ul {
