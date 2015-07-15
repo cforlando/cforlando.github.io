@@ -7,13 +7,13 @@ html#frontpage {
 }
 
 html body {
-	margin: 70px 0px 0px 0px;
+	margin: 16px 0px 0px 0px;
 	background-color: white;
 	min-height: 90vh;
 }
 
 html#frontpage body {
-	margin: 270px 0px 0px 0px;
+	margin: 300px 0px 0px 0px;
 }
 
 body {
@@ -23,6 +23,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Bitter", "Palatino", "Georgia", serif;
 	font-weight: 700;
+}
+
+html > body > article > header {
+	font-size: larger;
 }
 
 html#frontpage > body > article > header > hgroup {
@@ -53,7 +57,15 @@ section#focuslist ul li {
  	width: 2%; /* with display table-cell, a value here triggers a layout pass that makes them equal sized. */
 }
 
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
 nav {
+	opacity: 0;
+	animation: fadeIn ease-in 1;
+	animation-fill-mode: forwards;
+	animation-duration: 0.2s;
+	animation-delay: 0.5s;
+
 	background: rgba(32, 32, 32, 0.8);
 	position: fixed;
 	top: 0;
@@ -64,6 +76,7 @@ nav {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 	text-align: center;
 }
 
@@ -71,12 +84,18 @@ nav, nav ul {
 	font-size: smaller;
 }
 
-nav, nav a {
-	color: white;
-	text-decoration: none;
+nav ul {
+	margin: 0;
+	padding: 0;
 }
 
-nav a:active {
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 0.5ex 1.2ex;
+}
+
+nav a:hover {
 	background-color: black;
 }
 
@@ -88,6 +107,5 @@ nav ul li {
 	position: relative;
 	display: inline-block;
 	list-style: none;
-	margin: 0.2ex 1.2ex;
 	text-align: center
 }

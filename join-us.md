@@ -1,6 +1,6 @@
 ---
 layout: plain
-title: Join us!
+title: page title here 
 ---
 
 Join us
