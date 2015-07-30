@@ -5,20 +5,20 @@ future: false
 defaults:
   -
     scope:
-	  path: ""
-	values:
-	  layout: "plain"
+      path: ""
+    values:
+      layout: "plain"
 
   -
     scope:
-	  path: "_posts"
-	values:
-	  layout: "blog"
+      path: "_posts"
+    values:
+      layout: "blog"
 authors:
   chadmiller:
     name: Chad Miller
-	display_name: Chad
-	github: chadmiller
-	web: http://chad.org/
-	tweet: chadmiller
-	avatarid: 287758    # see your github profile, view image
+    display_name: Chad
+    github: chadmiller
+    web: http://chad.org/
+    tweet: chadmiller
+    avatarid: 287758    # see your github profile, view image
