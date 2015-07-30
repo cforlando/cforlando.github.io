@@ -7,7 +7,7 @@ mainmenu:
   Projects: "#some-projects-so-far"
   What We Do: "#what-we-do"
   When We Meet: http://www.meetup.com/Code-For-Orlando/
-  Code of Conduct: /code-of-conduct.html
+  Code of Conduct: /code-of-conduct
 focuspoints:
   - icon: support/data.png
     title: Open Civic Data

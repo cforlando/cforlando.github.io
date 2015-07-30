@@ -169,7 +169,7 @@ span.videoframe {
 }
 }
 
-img#topheaderlogo {
+html#blog img#topheaderlogo, html#plain img#topheaderlogo {
 	position: absolute;
 	top: 16px;
 	right: 0px;
@@ -177,6 +177,17 @@ img#topheaderlogo {
 	background: #f18903;
 	border-bottom: solid #f6b973 0.4ex;
 	border-left: solid #f6b973 0.4ex;
+}
+
+html#blog img#topheaderlogo, html#plain img#topheaderlogo {
+	padding: 0px;
+	border-right: none;
+	border-top: none;
+}
+
+html#blog header img {
+	padding: 0px;
+	border: none;
 }
 
 a:link {
@@ -189,4 +200,10 @@ a:visited {
 
 a:active {
 	color: hsla(36, 100%, 10%, 1);
+}
+
+html#blog img {
+	background-color: black;
+	padding: 1.5ex;
+	border: solid #f6b973 0.2ex;
 }
