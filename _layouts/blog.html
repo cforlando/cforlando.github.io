@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://codefororlando.com/ -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<title>CfO: {{ page.title }}</title>
+
+{% include font_loading.html %}
+
+{% assign page_author = site.authors.[page.author] %}
+{% assign page_author_avatar_url = "https://avatars.githubusercontent.com/u/" author.avatarid %}
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:url" content="http://codefororlando.com">
+<meta property="og:site_name" content="Code for Orlando">
+
+<link rel="stylesheet" id="theme-stylesheet-css" href="/images/site.css" type="text/css">
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-58450947-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+
+<body id="blog">
+
+{% if page.mainmenu %}
+<nav class="col-full" role="navigation">
+	<ul id="top-nav" class="nav">
+		{% for pair in page.mainmenu %}
+		<li><a href="{{ pair[1] }}">{{ pair[0] }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>
+{% endif %}
+
+<article>
+	<header>
+		<hgroup>
+
+{{ github }}
+
+{% for author in site.authors %}
+  {{ author }}<br/>
+{% endfor %}
+
+{% if page_author.avatarid %}<img src="{{ page_author_avatarid }}"/>{% else %}NO avatar.{% endif %}
+{{ avatar_url }}
+
+
+			<a href="/"><img id="topheaderlogo" src="/images/logo1-1024x327.png"></a>
+
+			<h1 class="site-title"><a name="home">{{ page.title }}</a></h1>
+			{% if page.subtitle %}<h2 class="site-description">{{ page.subtitle }}</h2>{% endif %}
+		</hgroup>
+	</header>
+
+{{ content }}
+
+{% if page.focuspoints %}
+<section id="focuslist">
+	<header>
+		<h2><a name="whatwedo>"{{ page.focuspoints.title }}</a></h2>
+	</header>
+
+	<ul>
+{% for focuspoint in page.focuspoints %}
+		<li class="feature">
+			<p><img src="{{ focuspoint.icon }}" alt="data" width="77" height="80"></p>
+			<h3 class="feature-title">{{ focuspoint.title }}</h3>
+			<div class="feature-content">{{ focuspoint.description }}</div>
+		</li>
+{% endfor %}
+	</ul>
+</section>
+{% endif %}
+
+{% if page.contactus %}
+<section>
+	<header>
+		<h2><a name="contactus">Contact Code For Orlando</a></h2>
+	</header>
+
+	<ul class="social">
+{% for socialitem in page.contactus %}
+		<li><a href="{{ socialitem.url }}" class="{{ socialitem.name }}">{{ socialitem.note }}</a></li>
+{% endfor %}
+	</ul>
+</section>
+{% endif %}
+
+</article>
+
+</body></html>
