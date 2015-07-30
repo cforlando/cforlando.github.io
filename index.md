@@ -2,11 +2,10 @@
 layout: frontpage
 title: Code for Orlando
 mainmenu:
-  What We Do: "#what-is-this"
-  Join Us: "#how-can-you-help"
-  Contact Us: "#contactus"
-  Our Code: https://github.com/cforlando/
-  The Data: https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando
+  About: "#what-is-this"
+  Help Us: "#how-can-you-help"
+  Projects: "#some-projects-so-far"
+  What We Do: "#what-we-do"
   When We Meet: http://www.meetup.com/Code-For-Orlando/
   Code of Conduct: /code-of-conduct.html
 focuspoints:
@@ -45,20 +44,29 @@ volunteering our talents to make a difference in the local community. We unite
 to improve the way the community, visitors, and local government experience
 Orlando.
 
-We welcome you to bring your talents to create a better Orlando
-
-Jennifer Pahlka, in her 2012 TED talk, called it "a Peace Corps for geeks."
+Jennifer Pahlka, in her 2012 TED talk, called Code for America "a
+Peace Corps for geeks". 
+<span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span>
 
 <iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+We welcome you to bring your talents to create a better Orlando.
 
 Some words to describe us:  transparent, inclusive, respectful, permissionless,
 generative.
 
-
 How can you help?
-=================
+-----------------
+
+...
 
 
 Some projects so far
 ====================
 
+We have some neat projects. Here are some examples.
+
+...
+
+Check out [all of our code](https://github.com/cforlando/) and [the
+data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
