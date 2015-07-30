@@ -100,7 +100,7 @@
 
 	<ul class="blogentries">
 {% for post in site.posts %}
-		<li><p><a href="{{ post.url }}">{{ post.title }}</a>, by {{ post.author }}</p>{{ post.excerpt }}</li>
+		<li><p><a href="{{ post.url }}">{{ post.title }}</a>, by {{ post.author }}</p><blockquote class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</blockquote></li>
 {% endfor %}
 	</ul>
 </section>

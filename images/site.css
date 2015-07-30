@@ -207,3 +207,12 @@ html#blog img {
 	padding: 1.5ex;
 	border: solid #f6b973 0.2ex;
 }
+
+ul.blogentries li {
+	margin: 0.4ex 0px;
+	line-height: 2.4ex;
+}
+
+ul.blogentries li blockquote.excerpt {
+	font-size: smaller;
+}
