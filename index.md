@@ -50,10 +50,10 @@ Peace Corps for geeks".
 
 <iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-We welcome you to bring your talents to create a better Orlando.
-
 Some words to describe us:  transparent, inclusive, respectful, permissionless,
 generative.
+
+We welcome you to bring your talents to create a better Orlando.
 
 How can you help?
 -----------------
