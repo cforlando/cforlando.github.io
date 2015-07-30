@@ -53,7 +53,7 @@ Peace Corps for geeks".
 Some words to describe us:  transparent, inclusive, respectful, permissionless,
 generative.
 
-We welcome you to bring your talents to create a better Orlando.
+We want you to bring your talents to create a better Orlando.
 
 How can you help?
 -----------------
