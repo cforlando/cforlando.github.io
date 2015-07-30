@@ -1,19 +1,23 @@
 html {
-	background: #f18903;
+	background-color: #f18903;
 }
 
 html#frontpage {
-	background: #f18903 url(/images/logo1-1024x327.png) top center no-repeat;
+	background-image: url(/images/orange-skyline-logoed.png);
+	background-position: center -5vh;
+	background-size: 100vw;
+	background-repeat: no-repeat;
 }
 
 html body {
 	margin: 16px 0px 0px 0px;
 	background-color: white;
 	min-height: 90vh;
+	border-top: #f6b973 solid 0.4ex;
 }
 
 html#frontpage body {
-	margin: 300px 0px 0px 0px;
+	margin: 25vw 0px 0px 0px;
 }
 
 body {
@@ -23,6 +27,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Bitter", "Palatino", "Georgia", serif;
 	font-weight: 700;
+	margin-top: 4ex;
 }
 
 html > body > article > header {
@@ -38,6 +43,16 @@ body article {
 	margin: 0px auto;
 	width: 70%;
 	max-width: 1400px;
+}
+
+html#frontpage > body > article {
+	margin-top: -80px;
+}
+
+a[name], h1[id], h2[id] {
+	/* margin-top; -40px; */
+	padding-top: 40px;
+	display: inline-block;
 }
 
 article > section {
@@ -56,6 +71,11 @@ section#focuslist ul li {
  	display: table-cell;
  	width: 2%; /* with display table-cell, a value here triggers a layout pass that makes them equal sized. */
 }
+
+section#focuslist ul li {
+	line-height: 2.6ex;
+}
+
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
@@ -108,4 +128,21 @@ nav ul li {
 	display: inline-block;
 	list-style: none;
 	text-align: center
+}
+
+iframe.videoframe {
+	background: #222;
+	border: solid #f6b973 0.3ex;
+	padding: 2ex;
+	margin-right: auto;
+	margin-left: auto
+}
+
+img#topheaderlogo {
+	position: absolute;
+	top: 16px;
+	right: 0px;
+	background: #f18903;
+	border-bottom: solid #f6b973 0.4ex;
+	border-left: solid #f6b973 0.4ex;
 }
