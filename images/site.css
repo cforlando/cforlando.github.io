@@ -109,7 +109,7 @@ nav ul {
 }
 
 nav a {
-	color: white;
+	color: white !important;
 	text-decoration: none;
 	padding: 0.5ex 1.2ex;
 }
