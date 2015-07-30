@@ -145,3 +145,15 @@ img#topheaderlogo {
 	border-bottom: solid #f6b973 0.4ex;
 	border-left: solid #f6b973 0.4ex;
 }
+
+a:link {
+	color: hsla(36, 100%, 40%, 1);
+}
+
+a:visited {
+	color: hsla(36, 100%, 20%, 1);
+}
+
+a:active {
+	color: hsla(36, 100%, 10%, 1);
+}
