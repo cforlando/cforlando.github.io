@@ -52,7 +52,6 @@ html#frontpage > body > article {
 a[name], h1[id], h2[id] {
 	/* margin-top; -40px; */
 	padding-top: 40px;
-	display: inline-block;
 }
 
 article > section {
