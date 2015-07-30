@@ -9,6 +9,16 @@ html#frontpage {
 	background-repeat: no-repeat;
 }
 
+@media (max-width: 800px) {
+html#frontpage {
+	background-position: center 0vh;
+}
+
+html {
+	font-size: smaller;
+}
+}
+
 html body {
 	margin: 16px 0px 0px 0px;
 	background-color: white;
@@ -59,6 +69,16 @@ article > section {
 	/* border-top: 1px solid silver; */
 }
 
+@media (max-width: 1000px) {
+section#focuslist ul {
+	font-size: smaller;
+}
+section#focuslist ul li p img {
+	display: none;
+}
+}
+@media (min-width: 1000px) {
+
 section#focuslist ul {
  	display: table;
  	text-align: center;
@@ -74,7 +94,7 @@ section#focuslist ul li {
 section#focuslist ul li {
 	line-height: 2.6ex;
 }
-
+}
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
@@ -136,11 +156,23 @@ iframe.videoframe {
 	margin-right: auto;
 	margin-left: auto
 }
+span.videoframe {
+	display: none;
+}
+@media (max-width: 1300px) {
+iframe.videoframe {
+	display: none;
+}
+span.videoframe {
+	display: inline;
+}
+}
 
 img#topheaderlogo {
 	position: absolute;
 	top: 16px;
 	right: 0px;
+	max-width: 30%;
 	background: #f18903;
 	border-bottom: solid #f6b973 0.4ex;
 	border-left: solid #f6b973 0.4ex;
