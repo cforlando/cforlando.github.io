@@ -46,9 +46,9 @@ Orlando.
 
 Jennifer Pahlka, in her 2012 TED talk, called Code for America "a
 Peace Corps for geeks". 
-<span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span>
+<span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span><!--this shows up only when narrow screen -->
 
-<iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><!-- this shows up only on wide screen -->
 
 Some words to describe us:  transparent, inclusive, respectful, permissionless,
 generative.
