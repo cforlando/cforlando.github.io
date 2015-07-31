@@ -56,6 +56,10 @@ body article {
 	max-width: 1400px;
 }
 
+body article img {
+	max-width: 100%;
+}
+
 html#frontpage > body > article {
 	margin-top: -80px;
 }
