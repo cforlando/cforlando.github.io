@@ -1,0 +1,20 @@
+
+{{ content }}
+
+<hr>
+
+<ul>
+{% for orgmember in site.github.organization_members %}
+	<li><a href="{{ orgmember.html_url }}"><img src="{{ orgmember.avatar_url }}">{{ orgmember.login }}</a>, </li>
+{% endfor %}
+</ul>
+
+<hr>
+
+{% for repo in site.github.public_repositories %}
+	<p><a href="{{ repo.html_url }}">{{ repo.name }}, {{ repo.description }}, </a>, {{ repo.size }}, {{ repo.open_issues_count }}, {{ repo.updated_at }}, {{ repo.watchers_count }}, </p>
+{% endfor %}
+
+{{ site.github }}
+
+<hr>
