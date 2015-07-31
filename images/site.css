@@ -32,17 +32,22 @@ html#frontpage body {
 }
 
 body {
-	font: normal 1.4em/1.5em "Cabin", arial, sans-serif;
+	font: 1.4em/1.5em "Open Sans", arial, sans-serif;
+	font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	margin-top: 4ex;
 }
 
 html > body > article > header {
 	font-size: larger;
+	font-weight: 800;
+}
+
+footer {
+	font-weight: 300;
 }
 
 html#frontpage > body > article > header > hgroup {
@@ -119,7 +124,6 @@ nav {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	text-align: center;
 }
