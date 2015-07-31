@@ -9,16 +9,16 @@ mainmenu:
   When We Meet: http://www.meetup.com/Code-For-Orlando/
   Code of Conduct: /code-of-conduct
 focuspoints:
-  - icon: support/data.png
+  - icon: images/data.png
     title: Open Civic Data
     description: Open government data increases trust in government, reduces friction in processes, and leads to economic development. Civic data does not free itself. It needs you to liberate it.
-  - icon: support/launch.png
+  - icon: images/launch.png
     title: Launch Civic Apps in Orlando
     description: Create and deploy awesome apps that connect the government to citizens. As civic hackers we can change the way our city and residents uses web and mobile software to operate.
-  - icon: support/octocat.png
+  - icon: images/octocat.png
     title: Contribute Code
     description: Open source communities build better code together. Together with other Code for America cities we can build better apps by contributing all our code to the Code for America repositories.
-  - icon: support/advocate.png
+  - icon: images/advocate.png
     title: Partner With Local Governments
     description: We know we can’t do it alone. It takes a group of volunteers working with our local cities and governments to make an impact.
 contactus:
