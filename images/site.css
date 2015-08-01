@@ -41,6 +41,14 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 4ex;
 }
 
+h1 {
+	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
 html > body > article > header {
 	font-size: larger;
 	font-weight: 800;

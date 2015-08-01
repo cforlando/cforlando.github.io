@@ -72,9 +72,10 @@ Check out [all of our code](https://github.com/cforlando/) and [the
 data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
 
 
-Most recently-updated projects
-------------------------------
+The Freshest
+------------
 
-Check these out! Just updated.
+Check these out! These projects were just updated.
 
 <ol class="flatlist" id="most-recently-updated-repos"></ol><!--- This is programatically filled. -->
+
