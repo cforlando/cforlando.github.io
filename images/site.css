@@ -224,3 +224,9 @@ ul.blogentries li {
 ul.blogentries li blockquote.excerpt {
 	font-size: smaller;
 }
+
+ol.flatlist { padding: 0px; }
+ol.flatlist li:before { content: '“'; }
+ol.flatlist li:after { content: '”, '; }
+ol.flatlist li:last-child:after { content: '”'; }
+ol.flatlist li { display: inline; }

@@ -83,7 +83,7 @@
 
 
 	<p><a href="https://cmiller407.typeform.com/to/jh2LKo" data-mode="1" target="_blank">Send us a note</a>. It will take just a few seconds.</p>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+<script type="text/javascript">(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
 
 	<ul class="social">
 {% for socialitem in page.contactus %}
@@ -106,7 +106,39 @@
 </section>
 
 
-
 </article>
+
+<script type="text/javascript">
+(function() {
+	function fill_recent_repo_list() {
+		var o = JSON.parse(this.responseText);
+		var rl = new Array();
+		for (var i = 0; i < o.length; i++) {
+			var r = o[i];
+			if (r["name"] == "cforlando.github.io") { continue; } // skip self
+			if (r["size"] == 0) { continue; } // skip empty
+			rl.push( [ r["updated_at"], r["name"].toLowerCase(), r["html_url"] ] );
+		}
+		rl.sort();
+		for (var i = rl.length-1; i >= rl.length-5; i--) {
+			var a = document.createElement("a");
+			a.setAttribute("href", rl[i][2]);
+			a.setAttribute("title", "updated at " + rl[i][0]);
+			a.appendChild(document.createTextNode(rl[i][1]));
+			var li = document.createElement("li");
+			li.appendChild(a);
+			ol.appendChild(li);
+		}
+	}
+
+	var ol = document.getElementById("most-recently-updated-repos");
+	if (ol) {
+		var xmlhr = new XMLHttpRequest();
+		xmlhr.onload = fill_recent_repo_list;
+		xmlhr.open("get", "{{ site.github.repos_url }}", true);
+		xmlhr.send();
+	}
+})()
+</script>
 
 </body></html>
