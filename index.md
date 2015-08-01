@@ -20,7 +20,7 @@ focuspoints:
     description: Open source communities build better code, and we'll contribute all our code to other CfA brigades.
   - icon: images/advocate.png
     title: Partner With Governments
-    description: We know we can’t do it alone. We work with our local cities and counties to make an difference.
+    description: We know we can’t do it alone. We work with our local cities and counties to make a difference.
 contactus:
   - name: twitter
     url: https://twitter.com/codefororlando
