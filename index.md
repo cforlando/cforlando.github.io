@@ -11,16 +11,16 @@ mainmenu:
 focuspoints:
   - icon: images/data.png
     title: Open Civic Data
-    description: Open government data increases trust in government, reduces friction in processes, and leads to economic development.
+    description: Open government data improves trust in government, reduces friction in processes, and leads to economic development.
   - icon: images/launch.png
-    title: Launch Civic Apps in Orlando
+    title: Launch Civic Apps
     description: Create and deploy awesome apps that connect the government to citizens.
   - icon: images/octocat.png
     title: Contribute Code
     description: Open source communities build better code, and we'll contribute all our code to other CfA brigades.
   - icon: images/advocate.png
-    title: Partner With Local Governments
-    description: We know we can’t do it alone. We work with our local cities and governments to make an impact.
+    title: Partner With Governments
+    description: We know we can’t do it alone. We work with our local cities and counties to make an difference.
 contactus:
   - name: twitter
     url: https://twitter.com/codefororlando
