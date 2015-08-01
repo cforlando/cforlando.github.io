@@ -71,5 +71,10 @@ We have some neat projects. Here are some examples.
 Check out [all of our code](https://github.com/cforlando/) and [the
 data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
 
-The projects updated most recently are
+
+Most recently-updated projects
+------------------------------
+
+Check these out! Just updated.
+
 <ol class="flatlist" id="most-recently-updated-repos"></ol><!--- This is programatically filled. -->
