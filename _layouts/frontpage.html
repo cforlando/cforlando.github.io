@@ -135,7 +135,7 @@
 	if (ol) {
 		var xmlhr = new XMLHttpRequest();
 		xmlhr.onload = fill_recent_repo_list;
-		xmlhr.open("get", "{{ site.github.repos_url }}", true);
+		xmlhr.open("get", "https://api.github.com/orgs/cforlando/repos", true);
 		xmlhr.send();
 	}
 })()
