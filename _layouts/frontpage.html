@@ -147,12 +147,13 @@ function fill_upcoming_meetup_events(resp) {
 		if (e["status"] != "upcoming") { continue; }
 		if (e["visibility"] != "public") { continue; }
 		var li = document.createElement("li");
-		var when = new Date(e["time"])
-		li.appendChild(document.createTextNode("Upcoming: " + when.toLocaleString() + " "));
+		var dateOptions = { month: 'numeric', day: 'numeric', weekday: 'short', hour: 'numeric', minute: 'numeric' };
+		var when = new Date(e["time"]);
+		li.appendChild(document.createTextNode("Upcoming: " + new Intl.DateTimeFormat('en-US', dateOptions).format(when) + " "));
 
 		var a = document.createElement("a");
 		a.setAttribute("href", e["event_url"]);
-		a.appendChild(document.createTextNode(e["name"]));
+		a.appendChild(document.createTextNode(e["name"].replace(/\bCode ?[Ff]or ?([OA])(merica|rlando)\b/, "Cf$1")));
 		
 		li.appendChild(a);
 		li.appendChild(document.createTextNode(" at " + e["venue"]["name"] + ", " + e["venue"]["address_1"] + "."));
