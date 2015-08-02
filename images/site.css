@@ -182,9 +182,10 @@ iframe.videoframe {
 span.videoframe {
 	display: none;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
 iframe.videoframe {
 	display: none;
+	max-width: 854px;
 }
 span.videoframe {
 	display: inline;

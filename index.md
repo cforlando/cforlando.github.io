@@ -48,7 +48,7 @@ Jennifer Pahlka, in her 2012 TED talk, called Code for America "a
 Peace Corps for geeks". 
 <span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span><!--- link to video shows up only when narrow screen -->
 
-<iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><!--- embedded video shows up only on wide screen -->
+<iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="100%" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><!--- embedded video shows up only on wide screen -->
 
 Some words to describe us:  transparent, inclusive, respectful, permissionless,
 generative.
@@ -67,12 +67,13 @@ group](http://www.meetup.com/Code-For-Orlando/) we use to advertize events.
 
 <ul id="upcoming-meetup-events"></ul><!--- This is programatically filled. -->
 
+We're not all talk. Maybe you just want to jump straight to the code.
+
 Some projects so far
 ====================
 
-We have some neat projects. Here are some examples.
-
-...
+We have some neat projects, spanning topics like pet adoption, bicycling,
+walking tours, road closures, and public health and vaccination.
 
 Check out [all of our code](https://github.com/cforlando/) and [the
 data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
