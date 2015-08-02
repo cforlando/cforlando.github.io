@@ -139,31 +139,36 @@
 		xmlhr.send();
 	}
 })();
-(function() {
-	function fill_upcoming_meetup_events() {
-		var o = JSON.parse(this.responseText)["results"];
-		for (var i = 0; i < o.length; i++) {
-			var e = o[i];
-			if (e["status"] != "upcoming") { continue; }
-			if (e["visibility"] != "public") { continue; }
+var div = document.getElementById("upcoming-meetup-events");
+function fill_upcoming_meetup_events(resp) {
+	var o = resp["results"];
+	for (var i = 0; i < o.length; i++) {
+		var e = o[i];
+		if (e["status"] != "upcoming") { continue; }
+		if (e["visibility"] != "public") { continue; }
+		var p = document.createElement("p");
+		var when = new Date(e["time"])
+		p.appendChild(document.createTextNode("Upcoming: " + when.toLocaleString() + " "));
 
-			var when = new Date(e["utc_offset"] + e["time"])
+		var a = document.createElement("a");
+		a.setAttribute("href", e["event_url"]);
+		a.appendChild(document.createTextNode(e["name"]));
+		
+		p.appendChild(a);
+		p.appendChild(document.createTextNode(" at " + e["venue"]["name"] + ", " + e["venue"]["address_1"] + "."));
 
-			var a = document.createElement("a");
-			a.setAttribute("href", e["event_url"]);
-			a.appendChild(document.createTextNode(when.toLocaleDateString() + " " + when.toLocaleTimeString() + ", " + e["name"] + " at " + e["venue"]["name"] + "(" + r["venue"]["address"] + "). RSVP!"));
-			var p = document.createElement("p");
-			p.appendChild(a);
-			div.appendChild(li);
-		}
+		div.appendChild(p);
+
+		if (i >= 2) { break; }
 	}
+}
 
-	var div = document.getElementById("upcoming-meetup-events");
+(function() {
 	if (div) {
-		var xmlhr = new XMLHttpRequest();
-		xmlhr.onload = fill_upcoming_meetup_events;
-		xmlhr.open("get", "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=Code-For-Orlando&page=200&fields=&order=time&status=upcoming&desc=false&sig_id=181582402&sig=e4a4e04183219629dd4f5a4599dcd27b5d489c87", true);
-		xmlhr.send();
+		var script = document.createElement("script");
+		script.setAttribute("type", "text/javascript");
+		script.setAttribute("src", "https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=Code-For-Orlando&page=200&fields=&order=time&status=upcoming&desc=false&sig_id=181582402&sig=e4a4e04183219629dd4f5a4599dcd27b5d489c87&callback=fill_upcoming_meetup_events");
+		document.body.appendChild(script);
 	}
 })();
 </script>
