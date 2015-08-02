@@ -1,5 +1,5 @@
 html {
-	background-color: #f18903;
+	background-color: hsla(34, 98%, 48%, 1);
 }
 
 html#frontpage {
@@ -23,8 +23,8 @@ html body {
 	margin: 16px 0px 0px 0px;
 	background-color: white;
 	min-height: 90vh;
-	border-top: #f6b973 solid 0.4ex;
-	border-bottom: #f6b973 solid 0.8ex;
+	border-top: hsla(32, 88%, 71%, 1) solid 0.4ex;
+	border-bottom: hsla(32, 88%, 71%, 1) solid 0.8ex;
 }
 
 html#frontpage body {
@@ -148,6 +148,7 @@ nav, nav ul {
 nav ul {
 	margin: 0;
 	padding: 0;
+	border-bottom: hsla(32, 100%, 50%, 0.5) solid 0.2ex;
 }
 
 nav a {
@@ -172,8 +173,8 @@ nav ul li {
 }
 
 iframe.videoframe {
-	background: #222;
-	border: solid #f6b973 0.3ex;
+	background: hsla(0, 0%, 13%, 1);
+	border: solid hsla(32, 88%, 71%, 1) 0.3ex;
 	padding: 2ex;
 	margin-right: auto;
 	margin-left: auto
@@ -195,9 +196,9 @@ html#blog img#topheaderlogo, html#plain img#topheaderlogo {
 	top: 16px;
 	right: 0px;
 	max-width: 30%;
-	background: #f18903;
-	border-bottom: solid #f6b973 0.4ex;
-	border-left: solid #f6b973 0.4ex;
+	background: hsla(34, 98%, 48%, 1);
+	border-bottom: solid hsla(32, 88%, 71%, 1) 0.4ex;
+	border-left: solid hsla(32, 88%, 71%, 1) 0.4ex;
 }
 
 html#blog img#topheaderlogo, html#plain img#topheaderlogo {
@@ -226,7 +227,7 @@ a:active {
 html#blog img {
 	background-color: black;
 	padding: 1.5ex;
-	border: solid #f6b973 0.2ex;
+	border: solid hsla(32, 88%, 71%, 1) 0.2ex;
 }
 
 ul.blogentries li {
@@ -243,6 +244,11 @@ ol.flatlist li:before { content: '“'; }
 ol.flatlist li:after { content: '”, '; }
 ol.flatlist li:last-child:after { content: '”'; }
 ol.flatlist li { display: inline; }
+
+#upcoming-meetup-events > *:first-child {
+	border-top: dotted 5px hsla(182, 100%, 58%, 1);
+	border-bottom: dotted 5px hsla(182, 100%, 58%, 1);
+}
 
 #upcoming-meetup-events > * {
 	margin: 1ex;
