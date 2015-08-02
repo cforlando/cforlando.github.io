@@ -10,17 +10,17 @@ mainmenu:
   Code of Conduct: /code-of-conduct
 focuspoints:
   - icon: images/data.png
-    title: Open Civic Data
-    description: Open government data improves trust in government, reduces friction in processes, and leads to economic development.
+    title: Liberate Gov't Data
+    description: Opening data, which gives citizens trust in government, smoothes processes, and aids the economy.
   - icon: images/launch.png
     title: Launch Civic Apps
-    description: Create and deploy awesome apps that connect the government to citizens.
+    description: Creating awesome apps that connect the government to citizens.
   - icon: images/octocat.png
     title: Contribute Code
-    description: Open source communities build better code, and we'll contribute all our code to other CfA brigades.
+    description: Participating in open-source communities. Contributing all our code to other CfA brigades.
   - icon: images/advocate.png
     title: Partner With Governments
-    description: We know we can’t do it alone. We work with our local cities and counties to make a difference.
+    description: Working with our state, cities, and counties. We know we can't do it alone.
 contactus:
   - name: twitter
     url: https://twitter.com/codefororlando
