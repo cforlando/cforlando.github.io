@@ -46,9 +46,9 @@ Orlando.
 
 Jennifer Pahlka, in her 2012 TED talk, called Code for America "a
 Peace Corps for geeks". 
-<span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span><!--this shows up only when narrow screen -->
+<span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span><!--- link to video shows up only when narrow screen -->
 
-<iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><!-- this shows up only on wide screen -->
+<iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><!--- embedded video shows up only on wide screen -->
 
 Some words to describe us:  transparent, inclusive, respectful, permissionless,
 generative.
@@ -56,10 +56,16 @@ generative.
 We want you to bring your talents to create a better Orlando.
 
 How can you help?
------------------
+=================
 
-...
+Join us.  Don't worry -- there's no commitment here.
 
+We're not at all formal, but we do get together once a month (at least) to
+chat about what we're interested in trying, or stuck on, or see a need for.  If
+you're not sure what to do, just [come listen. We have a Meetup
+group](http://www.meetup.com/Code-For-Orlando/) we use to advertize events.
+
+<div id="upcoming-meetup-events"></div><!--- This is programatically filled. -->
 
 Some projects so far
 ====================
