@@ -244,4 +244,7 @@ ol.flatlist li:after { content: '”, '; }
 ol.flatlist li:last-child:after { content: '”'; }
 ol.flatlist li { display: inline; }
 
-div#upcoming-meetup-events { font-size: smaller; }
+#upcoming-meetup-events > * {
+	margin: 1ex;
+	font-size: smaller;
+}

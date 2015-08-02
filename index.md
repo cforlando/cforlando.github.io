@@ -65,7 +65,7 @@ chat about what we're interested in trying, or stuck on, or see a need for.  If
 you're not sure what to do, just [come listen. We have a Meetup
 group](http://www.meetup.com/Code-For-Orlando/) we use to advertize events.
 
-<div id="upcoming-meetup-events"></div><!--- This is programatically filled. -->
+<ul id="upcoming-meetup-events"></ul><!--- This is programatically filled. -->
 
 Some projects so far
 ====================

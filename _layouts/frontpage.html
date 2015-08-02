@@ -146,18 +146,18 @@ function fill_upcoming_meetup_events(resp) {
 		var e = o[i];
 		if (e["status"] != "upcoming") { continue; }
 		if (e["visibility"] != "public") { continue; }
-		var p = document.createElement("p");
+		var li = document.createElement("li");
 		var when = new Date(e["time"])
-		p.appendChild(document.createTextNode("Upcoming: " + when.toLocaleString() + " "));
+		li.appendChild(document.createTextNode("Upcoming: " + when.toLocaleString() + " "));
 
 		var a = document.createElement("a");
 		a.setAttribute("href", e["event_url"]);
 		a.appendChild(document.createTextNode(e["name"]));
 		
-		p.appendChild(a);
-		p.appendChild(document.createTextNode(" at " + e["venue"]["name"] + ", " + e["venue"]["address_1"] + "."));
+		li.appendChild(a);
+		li.appendChild(document.createTextNode(" at " + e["venue"]["name"] + ", " + e["venue"]["address_1"] + "."));
 
-		div.appendChild(p);
+		div.appendChild(li);
 
 		if (i >= 2) { break; }
 	}
