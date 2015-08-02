@@ -148,7 +148,7 @@ nav, nav ul {
 nav ul {
 	margin: 0;
 	padding: 0;
-	border-bottom: hsla(32, 100%, 50%, 0.5) solid 0.2ex;
+	border-bottom: hsla(32, 100%, 50%, 0.4) solid 0.4ex;
 }
 
 nav a {
@@ -249,6 +249,7 @@ ol.flatlist li { display: inline; }
 #upcoming-meetup-events > *:first-child {
 	border-top: dotted 5px hsla(182, 100%, 58%, 1);
 	border-bottom: dotted 5px hsla(182, 100%, 58%, 1);
+	background: hsla(182, 100%, 58%, 0.1);
 }
 
 #upcoming-meetup-events > * {
