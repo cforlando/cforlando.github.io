@@ -67,10 +67,13 @@ group](http://www.meetup.com/Code-For-Orlando/) we use to advertize events.
 
 <ul id="upcoming-meetup-events"></ul><!--- This is programatically filled. -->
 
-We're not all talk. Maybe you just want to jump straight to the code.
 
 Some projects so far
 ====================
+
+We think you should come to some meetings, yes, but we're not all talk.  Maybe
+you already know what you want to do. Maybe you want to explore and jump
+straight to the code. 
 
 We have some neat projects, spanning topics like pet adoption, bicycling,
 walking tours, road closures, and public health and vaccination.
