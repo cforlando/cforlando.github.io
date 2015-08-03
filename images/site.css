@@ -68,10 +68,15 @@ html#frontpage > body > article > header > hgroup {
 }
 
 body article {
-	padding: 2em;
+	padding: 0px 2em;
 	margin: 0px auto;
 	width: 70%;
-	max-width: 1400px;
+	max-width: 100ex;
+}
+@media (max-width: 800px) {
+body article {
+	width: 90%;
+}
 }
 
 body article img {
@@ -79,12 +84,12 @@ body article img {
 }
 
 html#frontpage > body > article {
-	margin-top: -80px;
+	margin-top: 40px;
 }
 
 a[name], h1[id], h2[id] {
-	/* margin-top; -40px; */
-	padding-top: 40px;
+	margin-top: -60px;
+	padding-top: 70px;
 }
 
 article > section {
