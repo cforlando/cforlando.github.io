@@ -4,19 +4,25 @@ html {
 
 html#frontpage {
 	background-image: url(/images/orange-skyline-logoed.png);
-	background-position: center -5vh;
+	background-position: center -4vh;
 	background-size: 100vw;
 	background-repeat: no-repeat;
 }
 
-@media (max-width: 800px) {
-html#frontpage {
-	background-position: center 0vh;
+@media (max-width: 1100px) {
+	html#frontpage {
+		background-position: center -2vh;
+	}
 }
 
-html {
-	font-size: smaller;
-}
+@media (max-width: 870px) {
+	html#frontpage {
+		background-position: center -1vh;
+	}
+
+	html {
+		font-size: smaller;
+	}
 }
 
 html body {
@@ -161,6 +167,12 @@ nav a {
 	text-decoration: none;
 	padding: 0.5ex 1.2ex;
 }
+@media (max-width: 560px) {
+nav a {
+	padding: 0.5ex 0.8ex;
+}
+}
+
 
 nav a:hover {
 	background-color: black;
