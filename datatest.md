@@ -13,15 +13,19 @@ bugs_needing_help = new Array();
 
 
 
+
 (function() {
-  var add_bug_to_list, bug_count, bug_list, bugs_needing_help, want_count;
+  var add_bug_to_list, bug_count, bug_list, want_count;
 
   bug_list = document.getElementById("help-me-bugs");
 
   bug_count = 0;
 
+  want_count = 5;
+
   add_bug_to_list = function(project_description, project_help_bugs_url, bugs, contributors_url) {
     var a, avatarholder, bug, header, headerlink, i, len, li, p, req;
+    console.log(project_description);
     if (bug_count > want_count) {
       return;
     }
@@ -34,6 +38,7 @@ bugs_needing_help = new Array();
     header.appendChild(headerlink);
     for (i = 0, len = bugs.length; i < len; i++) {
       bug = bugs[i];
+      console.log(bug);
       if (bug_count > want_count) {
         break;
       }
@@ -73,30 +78,29 @@ bugs_needing_help = new Array();
     })(avatarholder, contributors_url);
   };
 
-  want_count = 5;
-
-  bugs_needing_help = new Array;
-
   document.poll_help_needed = function(project_description, issues_url_description, contributors_url) {
     var issues_url, req;
-    issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
-    req = new XMLHttpRequest;
-    return (function(req, project_description, issues_url, contributors_url) {
-      req.open("GET", issues_url);
-      req.addEventListener("load", function() {
-        var bugs;
-        if (req.responseText) {
-          bugs = JSON.parse(req.responseText);
-          if (bugs) {
-            return add_bug_to_list(project_description, bugs, contributors_url);
+    if (bug_list) {
+      issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
+      req = new XMLHttpRequest;
+      return (function(req, project_description, issues_url, contributors_url) {
+        req.open("GET", issues_url);
+        req.addEventListener("load", function() {
+          var bugs;
+          if (req.responseText) {
+            bugs = JSON.parse(req.responseText);
+            if (bugs) {
+              return add_bug_to_list(project_description, bugs, contributors_url);
+            }
           }
-        }
-      });
-      return req.send();
-    })(req, project_description, issues_url, contributors_url);
+        });
+        return req.send();
+      })(req, project_description, issues_url, contributors_url);
+    }
   };
 
 }).call(this);
+
 
 
 
