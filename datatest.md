@@ -93,7 +93,7 @@ bugs_needing_help = new Array();
           if (req.responseText) {
             bugs = JSON.parse(req.responseText);
             if (bugs.length > 0) {
-              return add_bug_to_list(project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3Ahelp+wanted", bugs, contributors_url);
+              return add_bug_to_list(project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3Ahelp%2Bwanted", bugs, contributors_url);
             }
           }
         });
