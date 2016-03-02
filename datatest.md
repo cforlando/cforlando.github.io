@@ -12,6 +12,7 @@ bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
 
+
 (function() {
   var add_bug_to_list, bug_count, bug_list, want_count;
 
@@ -23,7 +24,6 @@ bugs_needing_help = new Array();
 
   add_bug_to_list = function(project_description, project_help_bugs_url, bugs, contributors_url) {
     var a, avatarholder, bug, header, headerlink, i, len, li, p, req;
-    console.log(project_description);
     if (bug_count > want_count) {
       return;
     }
@@ -76,29 +76,27 @@ bugs_needing_help = new Array();
     })(avatarholder, contributors_url);
   };
 
-  document.poll_help_needed = function(project_description, issues_url_description, contributors_url) {
+  document.poll_help_needed = function(project_description, project_page_url, issues_url_description, contributors_url) {
     var issues_url, req;
     if (bug_list) {
       issues_url = issues_url_description.replace("{/number}", "");
       req = new XMLHttpRequest;
-      return (function(req, project_description, issues_url, contributors_url) {
+      return (function(req, project_description, project_page_url, issues_url, contributors_url) {
         req.open("GET", issues_url);
         req.addEventListener("load", function() {
           var bugs;
           if (req.responseText) {
             bugs = JSON.parse(req.responseText);
             if (bugs) {
-              console.log(typeof bugs);
-              console.log(bugs);
-              console.log("Bugs at " + issues_url);
-              return add_bug_to_list(project_description, bugs, contributors_url);
+              console.log("Bugs at " + issues_url + ": " + bugs);
+              return add_bug_to_list(project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3Ahelp+wanted", bugs, contributors_url);
             } else {
               return console.log("No bugs at " + issues_url);
             }
           }
         });
         return req.send();
-      })(req, project_description, issues_url, contributors_url);
+      })(req, project_description, project_page_url, issues_url, contributors_url);
     }
   };
 
@@ -106,6 +104,6 @@ bugs_needing_help = new Array();
 
 
 
-{% for repository in site.github.public_repositories %}document.poll_help_needed({{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}});
+{% for repository in site.github.public_repositories %}document.poll_help_needed({{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}});
 {% endfor %}
 </script>
