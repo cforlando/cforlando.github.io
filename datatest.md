@@ -28,6 +28,6 @@ function poll_help_needed(repository_name, issues_url_description, contributors_
   req.send();
 }
 
-{% for repository in site.github.public_repositories %}poll_help_needed('{{ repository.name | replace "{/number\}", "" }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
+{% for repository in site.github.public_repositories %}poll_help_needed('{{ repository.name | replace "{/number", "" }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
 {% endfor %}
 </script>
