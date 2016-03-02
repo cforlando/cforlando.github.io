@@ -51,6 +51,7 @@ bugs_needing_help = new Array();
     avatarholder = document.createElement("p");
     avatarholder.setAttribute("class", "contributor photoset");
     li.appendChild(avatarholder);
+    bug_list.appendChild(li);
     req = new XMLHttpRequest;
     return (function(avatarholder, contributors_url) {
       return req.addEventListener("load", function() {
@@ -101,7 +102,6 @@ bugs_needing_help = new Array();
   };
 
 }).call(this);
-
 
 
 {% for repository in site.github.public_repositories %}document.poll_help_needed({{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}});
