@@ -11,7 +11,9 @@ bugs_needing_help = new Array();
 function parse_help_needed_results(req, repository_name, issues_url_description, contributors_url) {
   bug_list = JSON.parse(req.responseText);
   if (bug_list) {
-    console.log("want to load " + contributors_url + " into bug list");
+    console.log("want to load " + bugs_list + " into bug list for " + repository_name);
+  } else {
+    console.log("no interesting bugs in " + repository_name)
   }
 }
 
