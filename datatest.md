@@ -13,7 +13,7 @@ var poll_help_needed;
 poll_help_needed = function(repository_name, issues_url_description, contributors_url) {
   var parse_help_needed_results, req;
   req = new XMLHttpRequest;
-  parse_help_needed_results = function(req, repository_name, issues_url, contributors_url) {
+  parse_help_needed_results = (function(req, repository_name, issues_url, contributors_url) {
     var bug, i, len, ref, results;
     if (req.responseText) {
       ref = JSON.Parse(req.responseText);
@@ -26,12 +26,11 @@ poll_help_needed = function(repository_name, issues_url_description, contributor
       }
       return results;
     }
-  };
+  })(req, repository_name, issues_url, contributors_url);
   req.addEventListener("load", parse_help_needed_results);
   req.open("GET", issues_url_description.replace("{/number}", "?assignee=none&amp;labels=help%20wanted"));
   return req.send();
 };
-
 
 {% for repository in site.github.public_repositories %}poll_help_needed('{{ repository.name | replace "{/number", "" }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
 {% endfor %}
