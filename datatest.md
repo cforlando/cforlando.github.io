@@ -21,9 +21,7 @@ poll_help_needed = function(repository_name, issues_url_description, contributor
         results = [];
         for (i = 0, len = ref.length; i < len; i++) {
           bug = ref[i];
-          console.log(bug.url);
-          console.log(bug.title);
-          results.push(console.log(bug.created_at));
+          results.push(bugs_needing_help.push([bug.created_at, bug.url, bug.title, repository_name, contributors_url]));
         }
         return results;
       }
