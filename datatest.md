@@ -12,8 +12,6 @@ bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
 
-
-
 (function() {
   var add_bug_to_list, bug_count, bug_list, want_count;
 
@@ -89,11 +87,13 @@ bugs_needing_help = new Array();
           var bugs;
           if (req.responseText) {
             bugs = JSON.parse(req.responseText);
-            console.log(typeof bugs);
-            console.log(bugs);
-            console.log(issues_url);
             if (bugs) {
+              console.log(typeof bugs);
+              console.log(bugs);
+              console.log("Bugs at " + issues_url);
               return add_bug_to_list(project_description, bugs, contributors_url);
+            } else {
+              return console.log("No bugs at " + issues_url);
             }
           }
         });
