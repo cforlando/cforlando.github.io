@@ -9,7 +9,7 @@ bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
 function parse_help_needed_results(req, repository_name, issues_url, contributors_url) {
-  bug_list = "";
+  var bug_list = "";
   if (req.responseText) {
     bug_list = JSON.parse(req.responseText);
   }
@@ -21,8 +21,8 @@ function parse_help_needed_results(req, repository_name, issues_url, contributor
 }
 
 function poll_help_needed(repository_name, issues_url_description, contributors_url) {
-  issues_url = issues_url_description.replace("{/number}", "?assignee=none&amp;labels=help%20wanted");
-  req = new XMLHttpRequest();
+  var issues_url = issues_url_description.replace("{/number}", "?assignee=none&amp;labels=help%20wanted");
+  var req = new XMLHttpRequest();
   req.addEventListener("load", function() { return parse_help_needed_results(req, repository_name, issues_url, contributors_url); });
   req.open("GET", issues_url);
   req.send();
