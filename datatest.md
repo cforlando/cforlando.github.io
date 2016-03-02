@@ -11,7 +11,7 @@ bugs_needing_help = new Array();
 poll_help_needed = function(repository_name, issues_url_description, contributors_url) {
   var issues_url, parse_help_needed_results, req;
   req = new XMLHttpRequest;
-  issues_url = issues_url_description.replace("{/number}", "?assignee=none&amp;labels=help%20wanted");
+  issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
   parse_help_needed_results = (function(_this) {
     return function(req, repository_name, issues_url, contributors_url) {
       var bug, i, len, ref, results;
