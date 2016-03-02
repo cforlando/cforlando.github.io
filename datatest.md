@@ -42,7 +42,7 @@ bugs_needing_help = new Array();
       }
       a = document.createElement("a");
       a.setAttribute("href", bug.html_url);
-      a.setAttribute("title", bug.number);
+      a.setAttribute("title", bug.description);
       a.appendChild(document.createTextNode(bug.title));
       p = document.createElement("p");
       p.appendChild(a);
@@ -65,6 +65,7 @@ bugs_needing_help = new Array();
             contributor = ref[j];
             img = document.createElement("img");
             img.setAttribute("src", contributor.avatar_url);
+            img.setAttribute("style", "width: 1em;");
             img.setAttribute("title", contributor.login);
             img.setAttribute("class", "avatar");
             a = document.createElement("a");
