@@ -28,7 +28,7 @@ poll_help_needed = function(repository_name, issues_url_description, contributor
     }
   };
   req.addEventListener("load", parse_help_needed_results);
-  req.open("GET", issues_url);
+  req.open("GET", issues_url_description.replace("{/number}", "?assignee=none&amp;labels=help%20wanted"));
   return req.send();
 };
 
