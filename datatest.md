@@ -15,9 +15,7 @@ function parse_help_needed_results(req, repository_name, issues_url_description,
   }
 }
 
-
 function poll_help_needed(repository_name, issues_url_description, contributors_url) {
-  
   req = new XMLHttpRequest();
   req.addEventListener("load", function() { parse_help_needed_results(req, repository_name, issues_url_description, contributors_url) });
   req.open("GET", issues_url_description.replace("{/number}", "?assignee=none&amp;labels=help%20wanted"));
