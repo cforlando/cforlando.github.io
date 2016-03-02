@@ -97,6 +97,6 @@ bugs_needing_help = new Array();
 
 
 
-{% for repository in site.github.public_repositories %}document.poll_help_needed('{{ repository.description |replace "\\", "\\\\" | replace "'", "\\'" }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
+{% for repository in site.github.public_repositories %}document.poll_help_needed('{{ repository.description | escape }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
 {% endfor %}
 </script>
