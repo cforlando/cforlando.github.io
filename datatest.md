@@ -94,6 +94,6 @@ bugs_needing_help = new Array();
 }).call(this);
 
 
-{% for repository in site.github.public_repositories %}poll_help_needed('{{ repository.name | replace "{/number", "" }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
+{% for repository in site.github.public_repositories %}document.poll_help_needed('{{ repository.name | replace "{/number", "" }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
 {% endfor %}
 </script>
