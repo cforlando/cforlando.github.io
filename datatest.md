@@ -87,7 +87,7 @@ bugs_needing_help = new Array();
           var bugs;
           if (req.responseText) {
             bugs = JSON.parse(req.responseText);
-            if (bugs) {
+            if (bugs.length) {
               console.log("Bugs at " + issues_url + ": " + bugs);
               return add_bug_to_list(project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3Ahelp+wanted", bugs, contributors_url);
             } else {
