@@ -100,6 +100,6 @@ bugs_needing_help = new Array();
 
 
 
-{% for repository in site.github.public_repositories %}document.poll_help_needed({{ repository.description | jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}});
+{% for repository in site.github.public_repositories %}document.poll_help_needed({{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}});
 {% endfor %}
 </script>
