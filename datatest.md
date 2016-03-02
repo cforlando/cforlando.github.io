@@ -14,6 +14,7 @@ bugs_needing_help = new Array();
 
 
 
+
 (function() {
   var add_bug_to_list, bug_count, bug_list, want_count;
 
@@ -81,7 +82,7 @@ bugs_needing_help = new Array();
   document.poll_help_needed = function(project_description, issues_url_description, contributors_url) {
     var issues_url, req;
     if (bug_list) {
-      issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
+      issues_url = issues_url_description.replace("{/number}", "");
       req = new XMLHttpRequest;
       return (function(req, project_description, issues_url, contributors_url) {
         req.open("GET", issues_url);
@@ -89,6 +90,7 @@ bugs_needing_help = new Array();
           var bugs;
           if (req.responseText) {
             bugs = JSON.parse(req.responseText);
+            console.log(bugs);
             if (bugs) {
               return add_bug_to_list(project_description, bugs, contributors_url);
             }
