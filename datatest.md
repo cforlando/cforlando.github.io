@@ -9,7 +9,7 @@ bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
 function parse_help_needed_results(req, repository_name, issues_url, contributors_url) {
-  var bug_list = "";
+  var bug_list = false;
   if (req.responseText) {
     bug_list = JSON.parse(req.responseText);
   }
