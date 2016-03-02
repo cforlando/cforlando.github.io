@@ -14,7 +14,6 @@ bugs_needing_help = new Array();
 
 
 
-
 (function() {
   var add_bug_to_list, bug_count, bug_list, want_count;
 
@@ -90,7 +89,9 @@ bugs_needing_help = new Array();
           var bugs;
           if (req.responseText) {
             bugs = JSON.parse(req.responseText);
+            console.log(typeof bugs);
             console.log(bugs);
+            console.log(issues_url);
             if (bugs) {
               return add_bug_to_list(project_description, bugs, contributors_url);
             }
@@ -102,7 +103,6 @@ bugs_needing_help = new Array();
   };
 
 }).call(this);
-
 
 
 
