@@ -26,7 +26,7 @@ poll_help_needed = function(repository_name, issues_url_description, contributor
         }
         return results;
       } else {
-        return console.log("no response text for " + issues_url + " for " + repository_name);
+        return console.log("no response text for " + issues_url + " for " + repository_name + " after " + req.status);
       }
     };
   })(this)(req, repository_name, issues_url, contributors_url);
@@ -34,8 +34,6 @@ poll_help_needed = function(repository_name, issues_url_description, contributor
   req.open("GET", issues_url);
   return req.send();
 };
-
-
 
 
 {% for repository in site.github.public_repositories %}poll_help_needed('{{ repository.name | replace "{/number", "" }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
