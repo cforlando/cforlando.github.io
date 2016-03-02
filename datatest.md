@@ -1,5 +1,5 @@
 ---
-layout: frontpage
+layout: plain
 title: Code for Orlando
 
 
