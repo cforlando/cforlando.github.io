@@ -12,6 +12,7 @@ bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
 
+
 (function() {
   var add_bug_to_list, bug_count, bug_list, bugs_needing_help, want_count;
 
@@ -80,7 +81,7 @@ bugs_needing_help = new Array();
     var issues_url, req;
     issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
     req = new XMLHttpRequest;
-    return (function(req, project_description, issues_url, contributors_url) {
+    return (function(req, repository_name, issues_url, contributors_url) {
       req.open("GET", issues_url);
       req.addEventListener("load", function() {
         if (req.responseText) {
@@ -88,10 +89,12 @@ bugs_needing_help = new Array();
         }
       });
       return req.send();
-    })(req, project_description, issues_url, contributors_url);
+    })(req, repository_name, issues_url, contributors_url);
   };
 
 }).call(this);
+
+
 
 
 {% for repository in site.github.public_repositories %}document.poll_help_needed('{{ repository.description }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
