@@ -92,5 +92,7 @@ Check these out! These projects were just updated.
 ----
 
 {% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }}) {{repository}}
+  {% for contributor in repository.contributors %}
+    * {{ contributor }}
+  {% endfor %}
 {% endfor %}
