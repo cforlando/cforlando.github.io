@@ -12,6 +12,7 @@ bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
 
+
 (function() {
   var add_bug_to_list, bug_count, bug_list, bugs_needing_help, want_count;
 
@@ -83,8 +84,12 @@ bugs_needing_help = new Array();
     return (function(req, project_description, issues_url, contributors_url) {
       req.open("GET", issues_url);
       req.addEventListener("load", function() {
+        var bugs;
         if (req.responseText) {
-          return add_bug_to_list(project_description, JSON.parse(req.responseText, contributors_url));
+          bugs = JSON.parse(req.responseText);
+          if (bugs) {
+            return add_bug_to_list(project_description, bugs, contributors_url);
+          }
         }
       });
       return req.send();
@@ -92,7 +97,6 @@ bugs_needing_help = new Array();
   };
 
 }).call(this);
-
 
 
 
