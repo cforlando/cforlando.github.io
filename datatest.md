@@ -12,6 +12,7 @@ bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
 
+
 (function() {
   var add_bug_to_list, bug_count, bug_list, want_count;
 
@@ -31,9 +32,9 @@ bugs_needing_help = new Array();
     headerlink = document.createElement("a");
     headerlink.setAttribute("href", project_help_bugs_url);
     headerlink.appendChild(document.createTextNode(project_description));
-    li.appendChild(headerlink);
     header = document.createElement("h3");
     header.appendChild(headerlink);
+    li.appendChild(header);
     for (i = 0, len = bugs.length; i < len; i++) {
       bug = bugs[i];
       if (bug_count > want_count) {
