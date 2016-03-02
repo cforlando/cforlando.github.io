@@ -11,8 +11,9 @@ title: Code for Orlando
 bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
+
 (function() {
-  var add_bug_to_list, bug_count, bug_list, bugs_needing_help, poll_help_needed, want_count;
+  var add_bug_to_list, bug_count, bug_list, bugs_needing_help, want_count;
 
   bug_list = document.getElementById("help-me-bugs");
 
@@ -75,7 +76,7 @@ bugs_needing_help = new Array();
 
   bugs_needing_help = new Array;
 
-  poll_help_needed = function(repository_name, issues_url_description, contributors_url) {
+  document.poll_help_needed = function(repository_name, issues_url_description, contributors_url) {
     var issues_url, req;
     issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
     req = new XMLHttpRequest;
@@ -91,6 +92,7 @@ bugs_needing_help = new Array();
   };
 
 }).call(this);
+
 
 {% for repository in site.github.public_repositories %}poll_help_needed('{{ repository.name | replace "{/number", "" }}', '{{ repository.issues_url }}', '{{ repository.contributors_url }}');
 {% endfor %}
