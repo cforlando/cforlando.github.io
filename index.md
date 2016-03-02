@@ -81,6 +81,9 @@ walking tours, road closures, and public health and vaccination.
 Check out [all of our code](https://github.com/cforlando/) and [the
 data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
 
+We also have some bug reports that we've marked as a good place to look for a way to help.
+
+<ul id="help-me-bugs"></ul>
 
 The Freshest
 ------------
@@ -89,3 +92,4 @@ Check these out! These projects were just updated.
 
 <ol class="flatlist" id="most-recently-updated-repos"></ol><!--- This is programatically filled. -->
 
+<script src="images/cfo-help-bugs.js"></script>
