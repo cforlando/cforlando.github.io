@@ -19,7 +19,7 @@ poll_help_needed = function(repository_name, issues_url_description, contributor
       console.log(req);
       console.log(req.status);
       if (req.responseText) {
-        ref = JSON.Parse(req.responseText);
+        ref = JSON.parse(req.responseText);
         results = [];
         for (i = 0, len = ref.length; i < len; i++) {
           bug = ref[i];
