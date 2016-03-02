@@ -16,8 +16,6 @@ poll_help_needed = function(repository_name, issues_url_description, contributor
     req.open("GET", issues_url);
     req.addEventListener("load", function() {
       var bug, i, len, ref, results;
-      console.log(req);
-      console.log(req.status);
       if (req.responseText) {
         ref = JSON.parse(req.responseText);
         results = [];
@@ -28,8 +26,6 @@ poll_help_needed = function(repository_name, issues_url_description, contributor
           results.push(console.log(bug.created_at));
         }
         return results;
-      } else {
-        return console.log("no response text for " + issues_url + " for " + repository_name + " after " + req.status);
       }
     });
     return req.send();
