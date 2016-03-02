@@ -26,7 +26,7 @@ bugs_needing_help = new Array();
     }
     li = document.createElement("li");
     headerlink = document.createElement("a");
-    headerlink.setAttribute("href", project_helpme_bugs_url);
+    headerlink.setAttribute("href", project_help_bugs_url);
     headerlink.appendChild(document.createTextNode(project_description));
     li.appendChild(headerlink);
     header = document.createElement("h3");
