@@ -12,7 +12,6 @@ bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
 
-
 (function() {
   var add_bug_to_list, bug_count, bug_list, want_count;
 
@@ -57,7 +56,7 @@ bugs_needing_help = new Array();
     bug_list.appendChild(li);
     req = new XMLHttpRequest;
     return (function(avatarholder, contributors_url) {
-      return req.addEventListener("load", function() {
+      req.addEventListener("load", function() {
         var contributor, img, j, len1, ref, results;
         if (req.responseText) {
           ref = JSON.parse(req.responseText);
@@ -76,6 +75,8 @@ bugs_needing_help = new Array();
           return results;
         }
       });
+      req.open("GET", contributors_url);
+      return req.send();
     })(avatarholder, contributors_url);
   };
 
@@ -85,7 +86,6 @@ bugs_needing_help = new Array();
       issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
       req = new XMLHttpRequest;
       return (function(req, project_description, project_page_url, issues_url, contributors_url) {
-        req.open("GET", issues_url);
         req.addEventListener("load", function() {
           var bugs;
           if (req.responseText) {
@@ -95,6 +95,7 @@ bugs_needing_help = new Array();
             }
           }
         });
+        req.open("GET", issues_url);
         return req.send();
       })(req, project_description, project_page_url, issues_url, contributors_url);
     }
