@@ -12,7 +12,6 @@ bugs_needing_help = new Array();
 // when, bug url, repository name, conributors_url
 
 
-
 (function() {
   var add_bug_to_list, bug_count, bug_list, want_count;
 
@@ -36,12 +35,12 @@ bugs_needing_help = new Array();
     header.appendChild(headerlink);
     for (i = 0, len = bugs.length; i < len; i++) {
       bug = bugs[i];
-      console.log(bug);
       if (bug_count > want_count) {
         break;
       }
       a = document.createElement("a");
       a.setAttribute("href", bug.html_url);
+      a.setAttribute("title", bug.number);
       a.appendChild(document.createTextNode(bug.title));
       p = document.createElement("p");
       p.appendChild(a);
@@ -51,7 +50,7 @@ bugs_needing_help = new Array();
     }
     avatarholder = document.createElement("p");
     avatarholder.setAttribute("class", "contributor photoset");
-    li.appendChild(headerlink);
+    li.appendChild(avatarholder);
     req = new XMLHttpRequest;
     return (function(avatarholder, contributors_url) {
       return req.addEventListener("load", function() {
@@ -87,7 +86,8 @@ bugs_needing_help = new Array();
           var bugs;
           if (req.responseText) {
             bugs = JSON.parse(req.responseText);
-            if (bugs.length) {
+            console.log(bugs.length);
+            if (bugs.length > 0) {
               console.log("Bugs at " + issues_url + ": " + bugs);
               return add_bug_to_list(project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3Ahelp+wanted", bugs, contributors_url);
             } else {
