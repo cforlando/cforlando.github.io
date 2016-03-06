@@ -56,7 +56,7 @@
             img.setAttribute("title", contributor.login);
             img.setAttribute("class", "avatar");
             a = document.createElement("a");
-            a.setAttribute("href", contributor.url);
+            a.setAttribute("href", contributor.html_url);
             a.appendChild(img);
             results.push(avatarholder.appendChild(a));
           }
