@@ -54,7 +54,6 @@ add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributor
 				for contributor in JSON.parse req.responseText
 					img = document.createElement "img"
 					img.setAttribute "src", contributor.avatar_url
-					img.setAttribute "style", "width: 1em;"
 					img.setAttribute "title", contributor.login
 					img.setAttribute "class", "avatar"
 
