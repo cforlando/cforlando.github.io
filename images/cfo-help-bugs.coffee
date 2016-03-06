@@ -1,5 +1,5 @@
 
-bug_list = document.getElementById "help-me-bugs"
+bug_list = document.getElementById "help-needed-bugs"
 bug_count = 0
 want_count = 5
 
@@ -66,7 +66,7 @@ add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributor
 		req.send()
 
 
-document.poll_help_needed = (project_description, project_page_url, issues_url_description, contributors_url) ->
+document.fill_help_needed_bugs_list= (project_description, project_page_url, issues_url_description, contributors_url) ->
 	if bug_list
 		issues_url = issues_url_description.replace "{/number}", "?labels=help%20wanted"
 
