@@ -274,6 +274,9 @@ ol.flatlist li { display: inline; }
 	font-size: smaller;
 }
 
+}
+
+
 ul#help-needed-bugs {
 	padding: 0px;
 }
@@ -284,7 +287,4 @@ ul#help-needed-bugs p.contributers {
 
 ul#help-needed-bugs li p.bug::before {
 	content: "help: "";
-}
-
-
 }
