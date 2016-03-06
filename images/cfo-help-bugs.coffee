@@ -58,7 +58,7 @@ add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributor
 					img.setAttribute "class", "avatar"
 
 					a = document.createElement "a"
-					a.setAttribute "href", contributor.url
+					a.setAttribute "href", contributor.html_url
 					a.appendChild img
 
 					avatarholder.appendChild a
