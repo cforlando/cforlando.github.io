@@ -273,3 +273,18 @@ ol.flatlist li { display: inline; }
 	margin: 1ex;
 	font-size: smaller;
 }
+
+ul#help-needed-bugs {
+	padding: 0px;
+}
+
+ul#help-needed-bugs p.contributers {
+	float: right;
+}
+
+ul#help-needed-bugs li p.bug::before {
+	content: "help: "";
+}
+
+
+}
