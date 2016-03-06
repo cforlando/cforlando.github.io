@@ -70,6 +70,10 @@
 
   document.fill_help_needed_bugs_list = function(project_description, project_page_url, issues_url_description, contributors_url) {
     var issues_url, req;
+    if (! bug_list) {
+      bug_list = document.getElementById("help-needed-bugs");
+    }
+
     if (bug_list) {
       issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
       req = new XMLHttpRequest;
