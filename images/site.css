@@ -274,17 +274,18 @@ ol.flatlist li { display: inline; }
 	font-size: smaller;
 }
 
-}
-
-
 ul#help-needed-bugs {
 	padding: 0px;
 }
 
-ul#help-needed-bugs p.contributers {
+ul#help-needed-bugs p.photoset {
 	float: right;
 }
 
+ul#help-needed-bugs p.photoset ing {
+	width: 4ex;
+}
+
 ul#help-needed-bugs li p.bug::before {
-	content: "help: "";
+	content: "help: ";
 }
