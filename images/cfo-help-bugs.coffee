@@ -67,6 +67,8 @@ add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributor
 
 
 document.fill_help_needed_bugs_list= (project_description, project_page_url, issues_url_description, contributors_url) ->
+	if ! bug_list
+		bug_list = document.getElementById "help-needed-bugs"
 	if bug_list
 		issues_url = issues_url_description.replace "{/number}", "?labels=help%20wanted"
 
