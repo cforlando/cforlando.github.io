@@ -53,7 +53,6 @@
             contributor = ref[j];
             img = document.createElement("img");
             img.setAttribute("src", contributor.avatar_url);
-            img.setAttribute("style", "width: 1em;");
             img.setAttribute("title", contributor.login);
             img.setAttribute("class", "avatar");
             a = document.createElement("a");
