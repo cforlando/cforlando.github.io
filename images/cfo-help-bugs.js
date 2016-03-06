@@ -2,7 +2,7 @@
 (function() {
   var add_bug_to_list, bug_count, bug_list, want_count;
 
-  bug_list = document.getElementById("help-me-bugs");
+  bug_list = document.getElementById("help-needed-bugs");
 
   bug_count = 0;
 
@@ -68,7 +68,7 @@
     })(avatarholder, contributors_url);
   };
 
-  document.poll_help_needed = function(project_description, project_page_url, issues_url_description, contributors_url) {
+  document.fill_help_needed_bugs_list = function(project_description, project_page_url, issues_url_description, contributors_url) {
     var issues_url, req;
     if (bug_list) {
       issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
