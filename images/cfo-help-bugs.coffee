@@ -21,6 +21,11 @@ add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributor
 	header.appendChild headerlink
 	li.appendChild header
 
+	avatarholder = document.createElement "p"
+	avatarholder.setAttribute "class", "contributor photoset"
+	li.appendChild avatarholder
+
+	bug_list.appendChild li
 
 	for bug in bugs
 		if bug_count > want_count
@@ -40,11 +45,7 @@ add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributor
 
 		bug_count++
 
-	avatarholder = document.createElement "p"
-	avatarholder.setAttribute "class", "contributor photoset"
-	li.appendChild avatarholder
 
-	bug_list.appendChild li
 
 	req = new XMLHttpRequest
 	do (avatarholder, contributors_url) ->
