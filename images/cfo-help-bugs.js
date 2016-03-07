@@ -23,7 +23,7 @@
     li.appendChild(header);
     //avatarholder = document.createElement("p");
     //avatarholder.setAttribute("class", "contributor photoset");
-    li.appendChild(avatarholder);
+    //li.appendChild(avatarholder);
     for (i = 0, len = bugs.length; i < len; i++) {
       bug = bugs[i];
       if (bug_count > want_count) {
