@@ -174,4 +174,8 @@ function fill_upcoming_meetup_events(resp) {
 })();
 </script>
 
-</body></html>
+</body>
+
+<script src="images/cfo-help-bugs.js"></script><script>document.fill_help_needed_bugs_list([{% for repository in site.github.public_repositories %}[{{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}}],{% endfor %}]);</script>
+
+</html>
