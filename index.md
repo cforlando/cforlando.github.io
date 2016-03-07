@@ -94,13 +94,6 @@ Check these out! These projects were just updated.
 
 <!---
 
-{{ site.github | jsonify }}
-
-
-
-
-
-
-{{ site | jsonify }}
+{{ site.github }}
 
 -->
