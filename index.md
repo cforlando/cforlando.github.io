@@ -83,7 +83,7 @@ data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Cod
 
 We also have some bug reports that we've marked as a good place to look for a way to help.
 
-<ul id="help-needed-bugs"></ul><script>document.fill_help_needed_bugs_list([{% for repository in site.github.public_repositories %}[{{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}}],{% endfor %}]);</script>
+<ul id="help-needed-bugs"></ul><script src="images/cfo-help-bugs.js"></script><script>document.fill_help_needed_bugs_list([{% for repository in site.github.public_repositories %}[{{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}}],{% endfor %}]);</script>
 
 The Freshest
 ------------
@@ -92,12 +92,9 @@ Check these out! These projects were just updated.
 
 <ol class="flatlist" id="most-recently-updated-repos"></ol><!--- This is programatically filled. -->
 
-<script src="images/cfo-help-bugs.js"></script>
-
 <!---
 
 {{ site.github | jsonify }}
-
 
 
 
