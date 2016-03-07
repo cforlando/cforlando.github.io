@@ -93,3 +93,17 @@ Check these out! These projects were just updated.
 <ol class="flatlist" id="most-recently-updated-repos"></ol><!--- This is programatically filled. -->
 
 <script src="images/cfo-help-bugs.js"></script>
+
+<!---
+
+{{ site.github | jsonify }}
+
+
+
+
+
+
+
+{{ site | jsonify }}
+
+-->
