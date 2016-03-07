@@ -1,15 +1,9 @@
+add_bug_to_list = (want_count, have_count, project_description, project_help_bugs_url, bugs, contributors_url) ->
 
-bug_list = document.getElementById "help-needed-bugs"
-bug_count = 0
-want_count = 5
-
-add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributors_url) ->
-
-	if bug_count > want_count
-		console.log "not adding any more bugs. We're full."
-		return
 	#
 	# <li><h3><a linktoprojectbugs>project description</a></h3><p><a linktobug>bug description</a></p><p>contributors</p></li>
+
+	added_here = 0
 
 	li = document.createElement "li"
 
@@ -28,7 +22,7 @@ add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributor
 	bug_list.appendChild li
 
 	for bug in bugs
-		if bug_count > want_count
+		if have_count > (want_count + added_here)
 			console.log "not adding any more bugs. We're full."
 			break
 
@@ -43,9 +37,9 @@ add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributor
 
 		li.appendChild p
 
-		bug_count++
+		added_here++
 
-	return
+	return added_here
 	# don't get avatars
 
 	req = new XMLHttpRequest
@@ -67,22 +61,35 @@ add_bug_to_list = (project_description, project_help_bugs_url, bugs, contributor
 		req.send()
 
 
-document.fill_help_needed_bugs_list= (project_description, project_page_url, issues_url_description, contributors_url) ->
-	if ! bug_list
-		bug_list = document.getElementById "help-needed-bugs"
+document.fill_help_needed_bugs_list = (repo_data_list) ->
+
+	have_count = 0
+	want_count = 5
+
+	bug_list = document.getElementById "help-needed-bugs"
 	if bug_list
-		issues_url = issues_url_description.replace "{/number}", "?labels=help%20wanted"
+		for repo_data in repo_data_list
 
-		req = new XMLHttpRequest
+			[project_description, project_page_url, issues_url_description, contributors_url] = repo_data
 
-		do (req, project_description, project_page_url, issues_url, contributors_url) ->
-			req.addEventListener "load", () ->
-				if req.responseText
-					bugs = JSON.parse req.responseText
-					if bugs.length > 0
-						add_bug_to_list project_description,  project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url
+			issues_url = issues_url_description.replace "{/number}", "?labels=help%20wanted"
 
-			req.open "GET", issues_url, false
-			req.send()
+			req = new XMLHttpRequest
+
+			do (req, project_description, project_page_url, issues_url, contributors_url) ->
+				req.addEventListener "load", () ->
+
+					if have_count > want_count
+						console.log "not adding any more bugs. We're full."
+						return
+						
+					if req.responseText
+						bugs = JSON.parse req.responseText
+						if bugs.length > 0
+							added = add_bug_to_list want_count, project_description,  project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url
+							have_count += added
+
+				req.open "GET", issues_url, false
+				req.send()
 
 
