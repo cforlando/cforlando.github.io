@@ -81,7 +81,7 @@ document.fill_help_needed_bugs_list= (project_description, project_page_url, iss
 					if bugs.length > 0
 						add_bug_to_list project_description,  project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url
 
-			req.open "GET", issues_url
+			req.open "GET", issues_url, false
 			req.send()
 
 
