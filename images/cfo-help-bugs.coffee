@@ -1,3 +1,14 @@
+fisherYates = (arr) ->
+	i = arr.length
+	if i is 0 then return false
+
+	while --i
+		j = Math.floor(Math.random() * (i+1))
+		[arr[i], arr[j]] = [arr[j], arr[i]] # use pattern matching to swap
+
+
+
+
 add_bug_to_list = (bug_list, want_count, have_count, project_description, project_help_bugs_url, bugs, contributors_url) ->
 
 	#
@@ -62,6 +73,8 @@ add_bug_to_list = (bug_list, want_count, have_count, project_description, projec
 
 
 document.fill_help_needed_bugs_list = (repo_data_list) ->
+
+	fisherYates repo_data_list  # Shuffle items to get random sample
 
 	have_count = 0
 	want_count = 5
