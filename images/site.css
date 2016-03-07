@@ -294,6 +294,10 @@ ul#help-needed-bugs li p.bug::before {
 	content: "help: ";
 }
 
+ul#help-needed-bugs li p.bug::after {
+	content: "   ";
+}
+
 ul#help-needed-bugs li p.bug {
 	font-size: smaller;
 	display: inline;
