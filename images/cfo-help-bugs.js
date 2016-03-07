@@ -87,7 +87,7 @@
             }
           }
         });
-        req.open("GET", issues_url);
+        req.open("GET", issues_url, false);
         return req.send();
       })(req, project_description, project_page_url, issues_url, contributors_url);
     }
