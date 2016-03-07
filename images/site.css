@@ -278,14 +278,23 @@ ul#help-needed-bugs {
 	padding: 0px;
 }
 
-ul#help-needed-bugs p.photoset {
+ul#help-needed-bugs li h3 {
+	margin: 0.3ex 0px;
+}
+
+ul#help-needed-bugs li p.photoset {
 	float: right;
 }
 
-ul#help-needed-bugs p.photoset img {
+ul#help-needed-bugs li p.photoset img {
 	width: 4ex;
 }
 
 ul#help-needed-bugs li p.bug::before {
 	content: "help: ";
+}
+
+ul#help-needed-bugs li p.bug {
+	font-size: smaller;
+	display: inline;
 }
