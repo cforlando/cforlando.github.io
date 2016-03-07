@@ -2,7 +2,7 @@
 (function() {
   var add_bug_to_list;
 
-  add_bug_to_list = function(want_count, have_count, project_description, project_help_bugs_url, bugs, contributors_url) {
+  add_bug_to_list = function(bug_list, want_count, have_count, project_description, project_help_bugs_url, bugs, contributors_url) {
     var a, added_here, bug, header, headerlink, i, len, li, p, req;
     added_here = 0;
     li = document.createElement("li");
@@ -68,7 +68,7 @@
         project_description = repo_data[0], project_page_url = repo_data[1], issues_url_description = repo_data[2], contributors_url = repo_data[3];
         issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
         req = new XMLHttpRequest;
-        results.push((function(req, project_description, project_page_url, issues_url, contributors_url) {
+        results.push((function(req, bug_list, project_description, project_page_url, issues_url, contributors_url) {
           req.addEventListener("load", function() {
             var added, bugs;
             if (have_count > want_count) {
@@ -78,14 +78,14 @@
             if (req.responseText) {
               bugs = JSON.parse(req.responseText);
               if (bugs.length > 0) {
-                added = add_bug_to_list(want_count, project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url);
+                added = add_bug_to_list(bug_list, want_count, project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url);
                 return have_count += added;
               }
             }
           });
           req.open("GET", issues_url, false);
           return req.send();
-        })(req, project_description, project_page_url, issues_url, contributors_url));
+        })(req, bug_list, project_description, project_page_url, issues_url, contributors_url));
       }
       return results;
     }

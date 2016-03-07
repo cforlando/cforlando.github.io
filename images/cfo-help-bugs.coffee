@@ -1,4 +1,4 @@
-add_bug_to_list = (want_count, have_count, project_description, project_help_bugs_url, bugs, contributors_url) ->
+add_bug_to_list = (bug_list, want_count, have_count, project_description, project_help_bugs_url, bugs, contributors_url) ->
 
 	#
 	# <li><h3><a linktoprojectbugs>project description</a></h3><p><a linktobug>bug description</a></p><p>contributors</p></li>
@@ -76,7 +76,7 @@ document.fill_help_needed_bugs_list = (repo_data_list) ->
 
 			req = new XMLHttpRequest
 
-			do (req, project_description, project_page_url, issues_url, contributors_url) ->
+			do (req, bug_list, project_description, project_page_url, issues_url, contributors_url) ->
 				req.addEventListener "load", () ->
 
 					if have_count > want_count
@@ -86,7 +86,7 @@ document.fill_help_needed_bugs_list = (repo_data_list) ->
 					if req.responseText
 						bugs = JSON.parse req.responseText
 						if bugs.length > 0
-							added = add_bug_to_list want_count, project_description,  project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url
+							added = add_bug_to_list bug_list, want_count, project_description,  project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url
 							have_count += added
 
 				req.open "GET", issues_url, false
