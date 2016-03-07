@@ -21,8 +21,8 @@
     header = document.createElement("h3");
     header.appendChild(headerlink);
     li.appendChild(header);
-    avatarholder = document.createElement("p");
-    avatarholder.setAttribute("class", "contributor photoset");
+    //avatarholder = document.createElement("p");
+    //avatarholder.setAttribute("class", "contributor photoset");
     li.appendChild(avatarholder);
     for (i = 0, len = bugs.length; i < len; i++) {
       bug = bugs[i];
@@ -40,7 +40,10 @@
       li.appendChild(p);
       bug_count++;
     }
-
+    
+    return
+    //skip call to avatar getter
+    
     bug_list.appendChild(li);
     req = new XMLHttpRequest;
     return (function(avatarholder, contributors_url) {
