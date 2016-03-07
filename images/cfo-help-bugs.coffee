@@ -83,6 +83,10 @@ document.fill_help_needed_bugs_list = (repo_data_list) ->
 	if bug_list
 		for repo_data in repo_data_list
 
+			if have_count > want_count
+				console.log "not adding any more bugs. We're full."
+				return
+
 			[project_description, project_page_url, issues_url_description, contributors_url] = repo_data
 
 			issues_url = issues_url_description.replace "{/number}", "?labels=help%20wanted"
@@ -99,7 +103,7 @@ document.fill_help_needed_bugs_list = (repo_data_list) ->
 					if req.responseText
 						bugs = JSON.parse req.responseText
 						if bugs.length > 0
-							added = add_bug_to_list bug_list, want_count, project_description,  project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url
+							added = add_bug_to_list bug_list, want_count, have_count, project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url
 							have_count += added
 
 				req.open "GET", issues_url, false
