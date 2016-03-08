@@ -287,6 +287,7 @@ ul#help-needed-bugs li {
 	padding: 1ex;
 	margin: 0px;
 	width: 40%;
+	min-width: 25ex;
 }
 
 ul#help-needed-bugs li h3 {
