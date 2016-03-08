@@ -60,7 +60,10 @@ How can you help?
 
 Join us.  Don't worry -- there's no commitment here.
 
-We're not at all formal, but we do get together once a month (at least) to
+The first easy part is to join our Slack group. It's how we communicate
+most. <script async defer src="https://codefororlando.herokuapp.com/slackin.js"></script>
+
+You should come to a meeting, too. We get together to
 [chat about what we're interested in trying, or stuck on, or see a need for.](/2016/02/01/your-first-hacknight/)
 If you're not sure what to do, just come listen. We have 
 [a Meetup group](http://www.meetup.com/Code-For-Orlando/) 
