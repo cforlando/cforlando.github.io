@@ -277,6 +277,7 @@ ol.flatlist li { display: inline; }
 ul#help-needed-bugs {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 	padding: 0px;
 }
