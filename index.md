@@ -1,12 +1,10 @@
 ---
 layout: frontpage
-title: Code for Orlando
+title: Code for Orlando, tech volunteers for change
 mainmenu:
-  About: "#what-is-this"
-  Help Us: "#how-can-you-help"
-  Projects: "#some-projects-so-far"
-  What We Do: "#what-we-do"
+  Our Projects: "#dive-into-a-project"
   When We Meet: http://www.meetup.com/Code-For-Orlando/
+  Contact Us: "#contact-us"
   Code of Conduct: /code-of-conduct
 focuspoints:
   - icon: images/data.png
@@ -33,18 +31,15 @@ contactus:
     note: Watch Code for Orlando on YouTube
 ---
 
-What is this?
-=============
+Use your talents to help make this place better
+===============================================
 
-Code for Orlando, a local 
-[Code for America](https://www.codeforamerica.org/about/values/) brigade,
-brings the community together to improve Orlando through technology. We are a
-group of "civic hackers" from various disciplines who are committed to
-volunteering our talents to make a difference in the local community. We unite
-to improve the way the community, visitors, and local government experience
-Orlando.
+Code for Orlando is a group of "civic hackers" who volunteer our tech
+talents to improve Orlando through our expertise in technology. We unite to
+improve the way residents, visitors, and local government experience Orlando.
 
-Jennifer Pahlka, in her 2012 TED talk, called Code for America "a
+In her 2012 TED talk, Jennifer Pahlka called [our parent organization 
+(Code for America)](https://www.codeforamerica.org/about/values/), "a
 Peace Corps for geeks". 
 <span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span><!--- link to video shows up only when narrow screen -->
 
@@ -53,7 +48,7 @@ Peace Corps for geeks".
 Some words to describe us:  transparent, inclusive, respectful, permissionless,
 generative.
 
-We want you to bring your talents to create a better Orlando.
+**We need your skills. Together, we can make Orlando awesome.**
 
 How can you help?
 =================
@@ -61,11 +56,15 @@ How can you help?
 Join us.  Don't worry -- there's no commitment here.
 
 We're not at all formal, but we do get together once a month (at least) to
-chat about what we're interested in trying, or stuck on, or see a need for.  If
-you're not sure what to do, just [come listen. We have a Meetup
-group](http://www.meetup.com/Code-For-Orlando/) we use to advertize events.
+[chat about what we're interested in trying, or stuck on, or see a need for.](/2016/02/01/your-first-hacknight/)
+If you're not sure what to do, just come listen. We have 
+[a Meetup group](http://www.meetup.com/Code-For-Orlando/) 
+we use to advertize events.
 
 <ul id="upcoming-meetup-events"></ul><!--- This is programatically filled. -->
+
+You [don't even have to be a programmer!](/2015/07/30/flags/) We need all kinds
+of talent, so please don't let the "code" in our name scare you.
 
 
 Dive into a project
@@ -78,9 +77,11 @@ straight to the code.
 We have some neat projects, spanning topics like pet adoption, bicycling,
 walking tours, road closures, and public health and vaccination.
 
-Check out [all of our code](https://github.com/cforlando/) and [the
-data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
+Check out [all of our code](https://github.com/cforlando/) and some of 
+[the data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
 
-We also have some bug reports that we've marked as a good place to look for a way to help. Those are marked "help wanted" in [each project](https://github.com/cforlando/)'s issue tracker.
+We also have some bug reports that we've marked as a good place to look for a
+way to help. Those are marked "help wanted" in 
+[each project](https://github.com/cforlando/)'s issue tracker.
 
 <ul id="help-needed-bugs"></ul><!--- This is programatically filled. -->
