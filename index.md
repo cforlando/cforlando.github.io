@@ -61,7 +61,7 @@ How can you help?
 Join us.  Don't worry -- there's no commitment here.
 
 The first easy part is to join our Slack group. It's how we communicate
-most. <script async defer src="https://codefororlando.herokuapp.com/slackin.js"></script>
+most. <script async defer src="https://codefororlando.herokuapp.com/slackin.js?large"></script>
 
 You should come to a meeting, too. We get together to
 [chat about what we're interested in trying, or stuck on, or see a need for.](/2016/02/01/your-first-hacknight/)
