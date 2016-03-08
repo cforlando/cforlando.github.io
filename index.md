@@ -50,7 +50,8 @@ Peace Corps for geeks".
 <iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="100%" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><!--- embedded video shows up only on wide screen -->
 
 Some words to describe us:  transparent, inclusive, respectful, permissionless,
-generative.
+generative.  You [don't even have to be a programmer!](/2015/07/30/flags/) We
+need all kinds of talent, so please don't let the "code" in our name scare you.
 
 **We need you and your skills. Together, we can make Orlando more awesome.**
 
@@ -66,9 +67,6 @@ If you're not sure what to do, just come listen. We have
 we use to advertize events.
 
 <ul id="upcoming-meetup-events"></ul><!--- This is programatically filled. -->
-
-You [don't even have to be a programmer!](/2015/07/30/flags/) We need all kinds
-of talent, so please don't let the "code" in our name scare you.
 
 
 Dive into a project
