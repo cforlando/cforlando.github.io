@@ -35,22 +35,21 @@ Help make Orlando better
 ========================
 
 Code for Orlando is a group of "civic hackers" who volunteer our tech
-talents to improve Orlando through our expertise in technology. We unite to
-improve the way residents, visitors, and local government experience Orlando.
+talents to improve our city for residents, visitors, and local government.
 
-Like what? Whatever we think of. We have some neat projects already, spanning
+Like what? Whatever we think of! We have some neat projects already, spanning
 topics like pet adoption, bicycling, walking tours, road closures, and public
 health and vaccination.
 
 In her 2012 TED talk, Jennifer Pahlka called our parent organization 
-([Code for America](https://www.codeforamerica.org/about/values/)) "a
-Peace Corps for geeks". 
+([Code for America](https://www.codeforamerica.org/about/values/)) a
+Peace Corps for geeks. 
 <span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span><!--- link to video shows up only when narrow screen -->
 
 <iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="100%" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><!--- embedded video shows up only on wide screen -->
 
-Some words to describe us:  transparent, inclusive, respectful, permissionless,
-generative.  You [don't even have to be a programmer!](/2015/07/30/flags/) We
+We're transparent, inclusive, respectful, permissionless, and generative.  We'd like you to join us. You
+[don't even have to be a programmer!](/2015/07/30/flags/) We
 need all kinds of talent, so please don't let the "code" in our name scare you.
 
 **We need you and your skills. Together, we can make Orlando more awesome.**
@@ -58,14 +57,12 @@ need all kinds of talent, so please don't let the "code" in our name scare you.
 How can you help?
 =================
 
-Join us.  Don't worry -- there's no commitment here.
-
 The first easy part is to join our Slack group. It's how we communicate
 most. <span class="attention-block"><script async defer src="https://codefororlando.herokuapp.com/slackin.js?large"></script></span>
 
 You should come to a meeting, too. We get together to
 [chat about what we're interested in trying, or stuck on, or see a need for.](/2016/02/01/your-first-hacknight/)
-If you're not sure what to do, just come listen. We have 
+If you're not sure what to do, come listen. We have 
 [a Meetup group](http://www.meetup.com/Code-For-Orlando/) 
 we use to advertize events.
 
@@ -75,7 +72,7 @@ we use to advertize events.
 Dive into a project
 ===================
 
-We think you should come to some meetings, yes, but we're not all talk.  Maybe
+We think you should come to some meetings, but we're not all talk.  Maybe
 you already know what you want to do. Maybe you want to explore and jump
 straight to the code. 
 
