@@ -319,5 +319,6 @@ span.attention-block {
 	margin: 0.2ex;
 	padding: 1ex;
 	background: hsla(182, 100%, 58%, 0.1);
-	border: dotted 5px hsla(182, 100%, 58%, 1);
+	border-left: dotted 5px hsla(182, 100%, 58%, 1);
+	border-right: dotted 5px hsla(182, 100%, 58%, 1);
 }
