@@ -275,7 +275,17 @@ ol.flatlist li { display: inline; }
 }
 
 ul#help-needed-bugs {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	padding: 0px;
+}
+
+ul#help-needed-bugs li {
+	list-style-type: none;
+	padding: 1ex;
+	margin: 0px;
+	width: 40%;
 }
 
 ul#help-needed-bugs li h3 {

@@ -68,8 +68,8 @@ group](http://www.meetup.com/Code-For-Orlando/) we use to advertize events.
 <ul id="upcoming-meetup-events"></ul><!--- This is programatically filled. -->
 
 
-Some projects so far
-====================
+Dive into a project
+===================
 
 We think you should come to some meetings, yes, but we're not all talk.  Maybe
 you already know what you want to do. Maybe you want to explore and jump
@@ -81,7 +81,7 @@ walking tours, road closures, and public health and vaccination.
 Check out [all of our code](https://github.com/cforlando/) and [the
 data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
 
-We also have some bug reports that we've marked as a good place to look for a way to help.
+We also have some bug reports that we've marked as a good place to look for a way to help. Those are marked "help wanted" in [each project](https://github.com/cforlando/)'s issue tracker.
 
 <ul id="help-needed-bugs"></ul>
 
