@@ -31,15 +31,19 @@ contactus:
     note: Watch Code for Orlando on YouTube
 ---
 
-Use your talents to help make this place better
-===============================================
+Help make Orlando better
+========================
 
 Code for Orlando is a group of "civic hackers" who volunteer our tech
 talents to improve Orlando through our expertise in technology. We unite to
 improve the way residents, visitors, and local government experience Orlando.
 
-In her 2012 TED talk, Jennifer Pahlka called [our parent organization 
-(Code for America)](https://www.codeforamerica.org/about/values/), "a
+Like what? Whatever we think of. We have some neat projects already, spanning
+topics like pet adoption, bicycling, walking tours, road closures, and public
+health and vaccination.
+
+In her 2012 TED talk, Jennifer Pahlka called our parent organization 
+([Code for America](https://www.codeforamerica.org/about/values/)) "a
 Peace Corps for geeks". 
 <span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span><!--- link to video shows up only when narrow screen -->
 
@@ -48,7 +52,7 @@ Peace Corps for geeks".
 Some words to describe us:  transparent, inclusive, respectful, permissionless,
 generative.
 
-**We need your skills. Together, we can make Orlando awesome.**
+**We need you and your skills. Together, we can make Orlando more awesome.**
 
 How can you help?
 =================
@@ -73,9 +77,6 @@ Dive into a project
 We think you should come to some meetings, yes, but we're not all talk.  Maybe
 you already know what you want to do. Maybe you want to explore and jump
 straight to the code. 
-
-We have some neat projects, spanning topics like pet adoption, bicycling,
-walking tours, road closures, and public health and vaccination.
 
 Check out [all of our code](https://github.com/cforlando/) and some of 
 [the data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
