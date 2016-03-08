@@ -83,17 +83,4 @@ data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Cod
 
 We also have some bug reports that we've marked as a good place to look for a way to help. Those are marked "help wanted" in [each project](https://github.com/cforlando/)'s issue tracker.
 
-<ul id="help-needed-bugs"></ul>
-
-The Freshest
-------------
-
-Check these out! These projects were just updated.
-
-<ol class="flatlist" id="most-recently-updated-repos"></ol><!--- This is programatically filled. -->
-
-<!---
-
-{{ site.github }}
-
--->
+<ul id="help-needed-bugs"></ul><!--- This is programatically filled. -->
