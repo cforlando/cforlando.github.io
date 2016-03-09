@@ -3,6 +3,8 @@
 <html lang="en-US" prefix="og: http://ogp.me/ns#" id="blog">
 <head>
 <title>CfO: {{ page.title }}</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato+Sans:400italic' rel='stylesheet' type='text/css'>
 {% include font_loading.html %}
 {% assign page_author = site.authors.[page.author] %}
 {% capture page_author_avatar_url %}https://avatars.githubusercontent.com/u/{{ page_author.avatarid }}{% endcapture %}
@@ -50,14 +52,18 @@
 <article>
 	<header>
 		<hgroup>
+			<h1>
+				<a href="/">
+					<span style="font-family: 'Open Sans', sans-serif; font-weight: 800;">Code</span>
+					<span style="font-family: 'Lato Sans', sans-serif; font-weight: 400; font-style: italic;">for</span>
+					<span style="font-family: 'Open Sans', sans-serif; font-weight: 800;">Orlando</span>
+				</a>
+			</h1>
 
+			<h2 class="site-title"><a name="home">{{ page.title }}</a></h2>
+			{% if page.subtitle %}<h3 class="site-description">{{ page.subtitle }}</h3>{% endif %}
 
-			<a href="/"><img id="topheaderlogo" src="/images/logo1-1024x327.png"></a>
-
-			<h1 class="site-title"><a name="home">{{ page.title }}</a></h1>
-			{% if page.subtitle %}<h2 class="site-description">{{ page.subtitle }}</h2>{% endif %}
-
-			<p class="byline">by {%if page_author.tweet %}<a href="https://twitter.com/{{ page_author.tweet }}">{% endif %}{{ page_author.name}}{% if page_author.avatarid %} <img width="30" src="{{ page_author_avatar_url }}"/>{%if page_author.tweet %}</a>{% endif %}{% endif %}</p>
+			<div class="byline">by {%if page_author.tweet %}<a href="https://twitter.com/{{ page_author.tweet }}">{% endif %}{{ page_author.name}}{% if page_author.avatarid %} <img width="30" src="{{ page_author_avatar_url }}"/>{%if page_author.tweet %}</a>{% endif %}{% endif %}</div>
 		</hgroup>
 	</header>
 

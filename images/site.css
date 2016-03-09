@@ -33,6 +33,15 @@ html body {
 	border-bottom: hsla(32, 88%, 71%, 1) solid 0.8ex;
 }
 
+html#blog > body  {
+	color: white;
+	background-color: hsla(34, 98%, 38%, 1);
+	border-bottom: hsla(32, 88%, 18%, 1) solid 10px;
+	border-top: hsla(32, 88%, 18%, 1) solid 10px;
+
+
+}
+
 html#frontpage body {
 	margin: 25vw 0px 0px 0px;
 }
@@ -63,6 +72,12 @@ h3 {
 html > body > article > header {
 	font-size: larger;
 	font-weight: 800;
+}
+
+html#blog > body > article header h1 a, html#blog > body > article header h1 a:visited, html#blog > body > article header h1 a:active, html#blog > body > article header h1 a:link 
+{
+	text-decoration: none;
+	color: white;
 }
 
 footer {
@@ -210,13 +225,6 @@ span.videoframe {
 }
 
 html#blog img#topheaderlogo, html#plain img#topheaderlogo {
-	position: absolute;
-	top: 16px;
-	right: 0px;
-	max-width: 30%;
-	background: hsla(34, 98%, 48%, 1);
-	border-bottom: solid hsla(32, 88%, 71%, 1) 0.4ex;
-	border-left: solid hsla(32, 88%, 71%, 1) 0.4ex;
 }
 
 html#blog img#topheaderlogo, html#plain img#topheaderlogo {
@@ -242,7 +250,19 @@ a:active {
 	color: hsla(36, 100%, 10%, 1);
 }
 
-html#blog img {
+html#blog a:link {
+	color: hsla(36, 100%, 90%, 1);
+}
+
+html#blog a:visited {
+	color: hsla(36, 100%, 80%, 1);
+}
+
+html#blog a:active {
+	color: hsla(36, 100%, 80%, 1);
+}
+
+html#blog article p img {
 	background-color: black;
 	padding: 1.5ex;
 	border: solid hsla(32, 88%, 71%, 1) 0.2ex;
