@@ -1,7 +1,7 @@
 How to view
 ===========
 
-Visit this site at http://cforlando.github.io/
+Visit this site at https://cforlando.github.io/
 
 How to write
 ============
