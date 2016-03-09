@@ -1,4 +1,7 @@
 # vi: expandtab tabstop=2 shiftwidth=2
+gems:
+    - jekyll-mentions
+
 title: Code For Orlando
 timezone: America/New_York
 permalink: pretty
