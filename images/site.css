@@ -101,7 +101,7 @@ body article {
 }
 
 body article img {
-	max-width: 100%;
+	max-width: 90%;
 }
 
 html#frontpage > body > article {
