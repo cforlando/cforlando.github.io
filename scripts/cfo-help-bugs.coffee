@@ -7,8 +7,6 @@ fisherYates = (arr) ->
 		[arr[i], arr[j]] = [arr[j], arr[i]] # use pattern matching to swap
 
 
-
-
 add_bug_to_list = (bug_list, want_count, have_count, project_description, project_help_bugs_url, bugs, contributors_url) ->
 
 	#
@@ -72,7 +70,7 @@ add_bug_to_list = (bug_list, want_count, have_count, project_description, projec
 		req.send()
 
 
-document.fill_help_needed_bugs_list = (repo_data_list) ->
+fill_help_needed_bugs_list = (repo_data_list) ->
 
 	fisherYates repo_data_list  # Shuffle items to get random sample
 
@@ -109,4 +107,6 @@ document.fill_help_needed_bugs_list = (repo_data_list) ->
 				req.open "GET", issues_url, false
 				req.send()
 
+
+`fill_help_needed_bugs_list([{% for repository in site.github.public_repositories %}[{{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}}],{% endfor %}]);`
 

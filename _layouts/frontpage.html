@@ -15,8 +15,8 @@
 <link rel="stylesheet" id="theme-stylesheet-css" href="/styles/site.css" type="text/css">
 
 <script>
-	if (window.location.host != 'localhost' && window.location.protocol != 'https:') { 
-		window.location.protocol = 'https:';
+	if (window.location.hostname != '127.0.0.1' && window.location.protocol != 'https:') { 
+		///window.location.protocol = 'https:';
 	}
 </script>
 <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
@@ -165,7 +165,6 @@ function fill_upcoming_meetup_events(resp) {
 </script>
 
 <script src="/scripts/cfo-help-bugs.js" defer></script>
-<script defer>document.fill_help_needed_bugs_list([{% for repository in site.github.public_repositories %}[{{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}}],{% endfor %}]);</script>
 
 <script type="text/javascript" async defer>
 	var _gaq = _gaq || [];

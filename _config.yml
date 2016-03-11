@@ -9,6 +9,12 @@ future: false
 defaults:
   -
     scope:
+      path: "scripts"
+    values:
+      layout: "none"
+
+  -
+    scope:
       path: ""
     values:
       layout: "plain"
