@@ -14,28 +14,11 @@
 
 <link rel="stylesheet" id="theme-stylesheet-css" href="/images/site.css" type="text/css">
 
-<script type="text/javascript">
+<script>
 	if (window.location.host != 'localhost' && window.location.protocol != 'https:') { 
 		window.location.protocol = 'https:';
 	}
 </script>
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-58450947-1']);
-	_gaq.push(['_gat._forceSSL']);
-	_gaq.push(['_trackPageview']);
-
-	(function () {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
-
-</script>
-<script src="/images/cfo-help-bugs.js"></script>
 <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
@@ -112,6 +95,8 @@
 {% endif %}
 
 </article>
+</body>
+
 
 <script type="text/javascript">
 (function() {
@@ -179,8 +164,25 @@ function fill_upcoming_meetup_events(resp) {
 })();
 </script>
 
-</body>
+<script src="images/cfo-help-bugs.js" defer></script>
+<script defer>document.fill_help_needed_bugs_list([{% for repository in site.github.public_repositories %}[{{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}}],{% endfor %}]);</script>
 
-<script src="images/cfo-help-bugs.js"></script><script>document.fill_help_needed_bugs_list([{% for repository in site.github.public_repositories %}[{{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}}],{% endfor %}]);</script>
+<script type="text/javascript" async defer>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-58450947-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<script src="/images/cfo-help-bugs.js" async defer></script>
 
 </html>
