@@ -35,11 +35,9 @@ html body {
 
 html#blog > body  {
 	color: white;
-	background-color: hsla(34, 98%, 38%, 1);
-	border-bottom: hsla(32, 88%, 18%, 1) solid 10px;
-	border-top: hsla(32, 88%, 18%, 1) solid 10px;
-
-
+	background-color: hsl(34, 100%, 33%);
+	border-bottom: hsl(278, 91%, 35%) solid 5px;
+	border-top: hsl(278, 91%, 35%) solid 5px;
 }
 
 html#frontpage body {
