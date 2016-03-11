@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://codefororlando.com">
 <meta property="og:site_name" content="Code for Orlando">
 
-<link rel="stylesheet" id="theme-stylesheet-css" href="/images/site.css" type="text/css">
+<link rel="stylesheet" id="theme-stylesheet-css" href="/styles/site.css" type="text/css">
 
 <script>
 	if (window.location.host != 'localhost' && window.location.protocol != 'https:') { 
@@ -164,7 +164,7 @@ function fill_upcoming_meetup_events(resp) {
 })();
 </script>
 
-<script src="images/cfo-help-bugs.js" defer></script>
+<script src="/scripts/cfo-help-bugs.js" defer></script>
 <script defer>document.fill_help_needed_bugs_list([{% for repository in site.github.public_repositories %}[{{ repository.description | jsonify }} || {{ repository.title | jsonify }}, {{ repository.html_url || jsonify }}, {{ repository.issues_url | jsonify }}, {{ repository.contributors_url | jsonify}}],{% endfor %}]);</script>
 
 <script type="text/javascript" async defer>
@@ -183,6 +183,6 @@ function fill_upcoming_meetup_events(resp) {
 	})();
 
 </script>
-<script src="/images/cfo-help-bugs.js" async defer></script>
+<script src="/scripts/cfo-help-bugs.js" async defer></script>
 
 </html>

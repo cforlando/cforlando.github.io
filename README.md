@@ -33,7 +33,7 @@ pull requests.
 How to code
 ===========
 
-The css that controls styling is in images/site.css .
+The css that controls styling is in styles/site.css .
 
 The code that transforms the various page types, `frontpage`, `plain`, and
 `blog` are in `_layouts` with that name.
