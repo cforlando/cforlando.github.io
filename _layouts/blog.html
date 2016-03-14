@@ -63,8 +63,10 @@
 					<span style="font-family: 'Open Sans', sans-serif; font-weight: 800; text-transform: uppercase;">Orlando</span>
 				</a>
 			</h1>
+		</hgroup>
 
-			<h2 class="site-title"><a name="home">{{ page.title }}</a></h2>
+		<hgroup>
+			<h2><a name="home">{{ page.title }}</a></h2>
 			{% if page.subtitle %}<h3 class="site-description">{{ page.subtitle }}</h3>{% endif %}
 
 			<div class="byline">by {%if page_author.tweet %}<a href="https://twitter.com/{{ page_author.tweet }}">{% endif %}{{ page_author.name}}{% if page_author.avatarid %} <img width="30" src="{{ page_author_avatar_url }}"/>{%if page_author.tweet %}</a>{% endif %}{% endif %}</div>
