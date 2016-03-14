@@ -28,7 +28,7 @@ html > body {
 
 html > body > article {
 	margin: auto;
-	width: 70%;
+	width: 100%; /* 100 percent of the body internal */
 	max-width: 100ex;
 }
 
