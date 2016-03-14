@@ -3,7 +3,7 @@ layout: frontpage
 title: Code for Orlando, tech volunteers for change
 mainmenu:
   When We Meet: http://www.meetup.com/Code-For-Orlando/
-  Contact Us: "#contact-us"
+  Contact Us: "#contact-code-for-orlando"
   Code of Conduct: /code-of-conduct
   Get Started!: "#dive-into-a-project"
 #focuspoints:
