@@ -2,24 +2,7 @@ html {
 	background-color: hsla(34, 98%, 48%, 1);
 }
 
-html#frontpage {
-	background-image: url(/images/orange-skyline-logoed.png);
-	background-position: center -4vh;
-	background-size: 100vw;
-	background-repeat: no-repeat;
-}
-
-@media (max-width: 1100px) {
-	html#frontpage {
-		background-position: center -2vh;
-	}
-}
-
 @media (max-width: 870px) {
-	html#frontpage {
-		background-position: center -1vh;
-	}
-
 	html {
 		font-size: smaller;
 	}
@@ -34,37 +17,19 @@ html body {
 }
 
 html#blog > body  {
-	color: white;
-	background-color: hsl(34, 100%, 33%);
+	color: black;
+	background-color: white;
 	border-bottom: hsl(278, 91%, 35%) solid 5px;
 	border-top: hsl(278, 91%, 35%) solid 5px;
 }
 
-html#frontpage body {
-	margin: 25vw 0px 0px 0px;
-}
-
 body {
-	font: 1.4em/1.5em "Open Sans", arial, sans-serif;
+	font: 1.2em/1.5em "Open Sans", arial, sans-serif;
 	font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	line-height: 2.2ex;
 	font-weight: 700;
-	margin-top: 4ex;
-}
-
-h1 {
-	font-size: 1.6em;
-}
-
-h2 {
-	font-size: 1.1em;
-}
-
-h3 {
-	font-size: 1.0em;
 }
 
 html > body > article > header {
@@ -75,15 +40,10 @@ html > body > article > header {
 html#blog > body > article header h1 a, html#blog > body > article header h1 a:visited, html#blog > body > article header h1 a:active, html#blog > body > article header h1 a:link 
 {
 	text-decoration: none;
-	color: white;
 }
 
 footer {
 	font-weight: 300;
-}
-
-html#frontpage > body > article > header > hgroup {
-	display: none;
 }
 
 body article {
@@ -100,47 +60,6 @@ body article {
 
 body article img {
 	max-width: 90%;
-}
-
-html#frontpage > body > article {
-	margin-top: 40px;
-}
-
-a[name], h1[id], h2[id] {
-	margin-top: -60px;
-	padding-top: 70px;
-}
-
-article > section {
-	margin-top: 2em;
-	/* border-top: 1px solid silver; */
-}
-
-@media (max-width: 1000px) {
-section#focuslist ul {
-	font-size: smaller;
-}
-section#focuslist ul li p img {
-	display: none;
-}
-}
-@media (min-width: 1000px) {
-
-section#focuslist ul {
- 	display: table;
- 	text-align: center;
- 	font-size: smaller;
-}
-
-section#focuslist ul li {
-	padding: 2ex;
- 	display: table-cell;
- 	width: 2%; /* with display table-cell, a value here triggers a layout pass that makes them equal sized. */
-}
-
-section#focuslist ul li {
-	line-height: 2.6ex;
-}
 }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -223,9 +142,6 @@ span.videoframe {
 }
 
 html#blog img#topheaderlogo, html#plain img#topheaderlogo {
-}
-
-html#blog img#topheaderlogo, html#plain img#topheaderlogo {
 	padding: 0px;
 	border-right: none;
 	border-top: none;
@@ -246,18 +162,6 @@ a:visited {
 
 a:active {
 	color: hsla(36, 100%, 10%, 1);
-}
-
-html#blog a:link {
-	color: hsla(36, 100%, 90%, 1);
-}
-
-html#blog a:visited {
-	color: hsla(36, 100%, 80%, 1);
-}
-
-html#blog a:active {
-	color: hsla(36, 100%, 80%, 1);
 }
 
 html#blog article p img {
