@@ -1,0 +1,68 @@
+
+html#frontpage {
+	background-image: url(/images/orange-skyline-logoed.png);
+	background-position: center -4vh;
+	background-size: 100vw;
+	background-repeat: no-repeat;
+}
+
+html#frontpage > body > article > header > hgroup {
+	display: none;
+}
+
+html#frontpage body {
+	margin: 25vw 0px 0px 0px;
+	padding: 1em 10%;
+}
+
+html#frontpage > body > article {
+	margin-top: 40px;
+}
+
+@media (max-width: 1100px) {
+	html#frontpage {
+		background-position: center -2vh;
+	}
+}
+
+@media (max-width: 870px) {
+	html#frontpage {
+		background-position: center -1vh;
+	}
+}
+
+@media (max-width: 1000px) {
+section#focuslist ul {
+	font-size: smaller;
+}
+section#focuslist ul li p img {
+	display: none;
+}
+}
+@media (min-width: 1000px) {
+
+section#focuslist ul {
+ 	display: table;
+ 	text-align: center;
+ 	font-size: smaller;
+}
+
+section#focuslist ul li {
+	padding: 2ex;
+ 	display: table-cell;
+ 	width: 2%; /* with display table-cell, a value here triggers a layout pass that makes them equal sized. */
+}
+
+section#focuslist ul li {
+	line-height: 2.6ex;
+}
+}
+
+
+h1#blog + ul li p em {
+	display: block;
+}
+
+header hgroup h1.site-title {
+	display: hidden;
+}
