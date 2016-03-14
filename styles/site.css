@@ -1,3 +1,8 @@
+/*
+ * All pages have a BODY. All BODYs have an ARTICLE child, and optionally have
+ * a NAV child, and nothing else.
+ */
+
 html {
 	background-color: hsla(34, 98%, 48%, 1);
 }
@@ -8,19 +13,29 @@ html {
 	}
 }
 
-html body {
+h1 a, h2 a, h3 a {
+	color: black !important;
+	text-decoration: none;
+}
+
+html > body {
 	margin: 16px 0px 0px 0px;
 	background-color: white;
 	min-height: 90vh;
-	border-top: hsla(32, 88%, 71%, 1) solid 0.4ex;
-	border-bottom: hsla(32, 88%, 71%, 1) solid 0.8ex;
+	border: hsla(32, 88%, 71%, 1) solid;
+	border-width: 0.4ex 0 0.8ex 0;
+}
+
+html > body > article {
+	margin: auto;
+	width: 70%;
+	max-width: 100ex;
 }
 
 html#blog > body  {
-	color: black;
 	background-color: white;
-	border-bottom: hsl(278, 91%, 35%) solid 5px;
-	border-top: hsl(278, 91%, 35%) solid 5px;
+	border: hsl(278, 91%, 35%) solid 5px;
+	border-width: 5px 0px;
 }
 
 body {
@@ -32,33 +47,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-html > body > article > header {
+html > body header {
 	font-size: larger;
 	font-weight: 800;
 }
 
-html#blog > body > article header h1 a, html#blog > body > article header h1 a:visited, html#blog > body > article header h1 a:active, html#blog > body > article header h1 a:link 
-{
-	text-decoration: none;
+header h1 {
+	letter-spacing: -0.05ex
 }
 
 footer {
 	font-weight: 300;
 }
 
-body article {
-	padding: 0px 2em;
-	margin: 0px auto;
-	width: 70%;
-	max-width: 100ex;
-}
 @media (max-width: 800px) {
-body article {
-	width: 90%;
-}
+	body > article {
+		width: 90%;
+	}
 }
 
-body article img {
+body > article img {
 	max-width: 90%;
 }
 
@@ -100,9 +108,9 @@ nav a {
 	padding: 0.5ex 1.2ex;
 }
 @media (max-width: 560px) {
-nav a {
-	padding: 0.5ex 0.8ex;
-}
+	nav a {
+		padding: 0.5ex 0.8ex;
+	}
 }
 
 
@@ -132,13 +140,13 @@ span.videoframe {
 	display: none;
 }
 @media (max-width: 1000px) {
-iframe.videoframe {
-	display: none;
-	max-width: 854px;
-}
-span.videoframe {
-	display: inline;
-}
+	iframe.videoframe {
+		display: none;
+		max-width: 854px;
+	}
+	span.videoframe {
+		display: inline;
+	}
 }
 
 html#blog img#topheaderlogo, html#plain img#topheaderlogo {
