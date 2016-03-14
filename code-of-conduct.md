@@ -1,6 +1,6 @@
 ---
-layout: plain
-title: Code for Orlando's Code of Conduct
+layout: blog
+title: Code of Conduct
 ---
 
 The Code for Orlando community expects that Code for Orlando network activities, events, and digital forums:
