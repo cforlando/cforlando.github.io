@@ -76,8 +76,8 @@ we use to advertize events.
 Dive into a project
 ===================
 
-We think you should come to some meetings, but we're not all talk.  Maybe
-you already know what you want to do. Maybe you want to explore and jump
+Meetings are useful to coordinate with other people, but you don't have to wait.
+Maybe you already know what you want to do. Maybe you want to explore and jump
 straight to the code. 
 
 Check out [all of our code](https://github.com/cforlando/) and some of 
