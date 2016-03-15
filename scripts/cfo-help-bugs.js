@@ -18,7 +18,7 @@
   };
 
   add_bug_to_list = function(bug_list, want_count, have_count, project_description, project_help_bugs_url, bugs, contributors_url) {
-    var a, added_here, bug, header, headerlink, k, len, li, p, req;
+    var a, added_here, bug, header, headerlink, k, len, li, p, reporter_avatar, req;
     added_here = 0;
     li = document.createElement("li");
     headerlink = document.createElement("a");
@@ -34,13 +34,19 @@
         console.log("not adding any more bugs. We're full.");
         break;
       }
+      p = document.createElement("p");
+      p.setAttribute("class", "bug");
+      if (bug.user.avatar_url) {
+        reporter_avatar = document.createElement("img");
+        reporter_avatar.setAttribute("src", bug.user.avatar_url + "&s=20");
+        reporter_avatar.setAttribute("title", "reported by " + bug.user.login);
+        p.appendChild(reporter_avatar);
+      }
       a = document.createElement("a");
       a.setAttribute("href", bug.html_url);
-      a.setAttribute("title", bug.description);
+      a.setAttribute("title", bug.body);
       a.appendChild(document.createTextNode(bug.title));
-      p = document.createElement("p");
       p.appendChild(a);
-      p.setAttribute("class", "bug");
       li.appendChild(p);
       added_here++;
     }

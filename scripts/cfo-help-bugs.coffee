@@ -35,14 +35,22 @@ add_bug_to_list = (bug_list, want_count, have_count, project_description, projec
 			console.log "not adding any more bugs. We're full."
 			break
 
-		a = document.createElement "a"
-		a.setAttribute "href", bug.html_url
-		a.setAttribute "title", bug.description
-		a.appendChild document.createTextNode bug.title
 
 		p = document.createElement "p"
-		p.appendChild a
 		p.setAttribute "class", "bug"
+
+		if bug.user.avatar_url
+			reporter_avatar = document.createElement "img"
+			reporter_avatar.setAttribute "src", bug.user.avatar_url+"&s=20"
+			reporter_avatar.setAttribute "title", "reported by " + bug.user.login
+			p.appendChild reporter_avatar
+
+		a = document.createElement "a"
+		a.setAttribute "href", bug.html_url
+		a.setAttribute "title", bug.body
+		a.appendChild document.createTextNode bug.title
+
+		p.appendChild a
 
 		li.appendChild p
 
