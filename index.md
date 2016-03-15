@@ -40,9 +40,14 @@ Help make Orlando better
 Code for Orlando is a group of "civic hackers" who volunteer our tech
 talents to improve our city for residents, visitors, and local government.
 
-Like what? Whatever we think of! We have some neat projects already, spanning
-topics like pet adoption, bicycling, walking tours, road closures, and public
-health and vaccination.
+We make projects we think might help. They span topics like pet adoption,
+bicycling, walking tours, road closures, and public health and vaccination.
+Once you accept you have some power to change things, we're sure
+you'll think of more.
+
+We're transparent, inclusive, respectful, permissionless, and generative.  We'd like you to join us. You
+[don't even have to be a programmer!](/2015/07/30/flags/) We
+need all kinds of talent, so please don't let the "code" in our name scare you.
 
 In her 2012 TED talk, Jennifer Pahlka called our parent organization 
 ([Code for America](https://www.codeforamerica.org/about/values/)) a
@@ -51,19 +56,15 @@ Peace Corps for geeks.
 
 <iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="100%" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><!--- embedded video shows up only on wide screen -->
 
-We're transparent, inclusive, respectful, permissionless, and generative.  We'd like you to join us. You
-[don't even have to be a programmer!](/2015/07/30/flags/) We
-need all kinds of talent, so please don't let the "code" in our name scare you.
-
 **We need you and your skills. Together, we can make Orlando more awesome.**
 
 How can you help?
 =================
 
-The first easy part is to join our Slack group. It's how we communicate
+At the very least, you should introduce yourself on our Slack group. Slack is how we communicate
 most. <span class="attention-block"><script async defer src="https://codefororlando.herokuapp.com/slackin.js?large"></script></span>
 
-You should come to a meeting, too. We get together to chat about what we're
+You may like to come to a meeting, too. We get together to chat about what we're
 interested in trying, or stuck on, or see a need for.
 [If you're not sure what to do](/2016/02/01/your-first-hacknight/), come listen. We have 
 [a Meetup group](http://www.meetup.com/Code-For-Orlando/) 
