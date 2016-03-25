@@ -53,7 +53,7 @@ know of road closures, and be healthy and vaccinated, and *whatever else we thin
 of.* We're sure you will have ideas too.
 
 We're transparent, inclusive, respectful, permissionless, and generative, and we'd 
-like you to join us. You[don't even have to be a programmer!](/2015/07/30/flags/) We
+like you to join us. You [don't even have to be a programmer!](/2015/07/30/flags/) We
 need all kinds of talent, so please don't let the "code" in our name scare you.
 
 **We need you and your skills. Together, we can make Orlando more awesome.**
