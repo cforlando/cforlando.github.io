@@ -37,24 +37,24 @@ contactus:
 Help make Orlando better
 ========================
 
-Code for Orlando is a group of "civic hackers" who volunteer our tech
+Code for Orlando is a loose group of *civic hackers* who volunteer our tech
 talents to improve our city for residents, visitors, and local government.
 
-We make projects we think might help. They span topics like pet adoption,
-bicycling, walking tours, road closures, and public health and vaccination.
-Once you accept you have some power to change things, we're sure
-you'll think of more.
-
-We're transparent, inclusive, respectful, permissionless, and generative.  We'd like you to join us. You
-[don't even have to be a programmer!](/2015/07/30/flags/) We
-need all kinds of talent, so please don't let the "code" in our name scare you.
-
-In her 2012 TED talk, Jennifer Pahlka called our parent organization 
-([Code for America](https://www.codeforamerica.org/about/values/)) a
-Peace Corps for geeks. 
+In her 2012 TED talk, Jennifer Pahlka described 
+[us](https://www.codeforamerica.org/about/values/) as "a
+Peace Corps for geeks". Instead of digging wells, we might sift reams of government
+data to report water quality in a way citizens can understand.
 <span class="videoframe"><a href="http://www.ted.com/talks/jennifer_pahlka_coding_a_better_government">See the whole talk.</a> It's pretty great.</span><!--- link to video shows up only when narrow screen -->
 
 <iframe class="videoframe" src="https://embed-ssl.ted.com/talks/jennifer_pahlka_coding_a_better_government.html" width="100%" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><!--- embedded video shows up only on wide screen -->
+
+We've made projects to help people adopt pets, bicycle around, take walking tours, 
+know of road closures, and be healthy and vaccinated, and *whatever else we think 
+of.* We're sure you will have ideas too.
+
+We're transparent, inclusive, respectful, permissionless, and generative, and we'd 
+like you to join us. You[don't even have to be a programmer!](/2015/07/30/flags/) We
+need all kinds of talent, so please don't let the "code" in our name scare you.
 
 **We need you and your skills. Together, we can make Orlando more awesome.**
 
