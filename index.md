@@ -84,7 +84,7 @@ Check out [all of our code](https://github.com/cforlando/) and some of
 [the data we've accumulated](https://brigades.opendatanetwork.com/brigade?brigade=Code%20for%20Orlando).
 
 We also have some bug reports that we've marked as a good place to look for a
-way to help. Those are marked "help wanted" in 
+way to help. Those are marked "starter" in 
 [each project](https://github.com/cforlando/)'s issue tracker.
 
 <ul id="help-needed-bugs"></ul><!--- This is programatically filled. -->
