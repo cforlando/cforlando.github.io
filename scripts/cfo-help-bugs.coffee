@@ -95,7 +95,7 @@ fill_help_needed_bugs_list = (repo_data_list) ->
 
 			[project_description, project_page_url, issues_url_description, contributors_url] = repo_data
 
-			issues_url = issues_url_description.replace "{/number}", "?labels=help%20wanted"
+			issues_url = issues_url_description.replace "{/number}", "?labels=starter"
 
 			req = new XMLHttpRequest
 
