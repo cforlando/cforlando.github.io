@@ -94,7 +94,7 @@
           if (req.responseText) {
             bugs = JSON.parse(req.responseText);
             if (bugs.length > 0) {
-              added = add_bug_to_list(bug_list, want_count, have_count, project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22", bugs, contributors_url);
+              added = add_bug_to_list(bug_list, want_count, have_count, project_description, project_page_url + "/issues?q=is%3Aissue+is%3Aopen+label%3A%22starter%22", bugs, contributors_url);
               return have_count += added;
             }
           }
