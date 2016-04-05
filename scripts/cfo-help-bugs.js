@@ -109,7 +109,7 @@
           return;
         }
         project_description = repo_data[0], project_page_url = repo_data[1], issues_url_description = repo_data[2], contributors_url = repo_data[3];
-        issues_url = issues_url_description.replace("{/number}", "?labels=help%20wanted");
+        issues_url = issues_url_description.replace("{/number}", "?labels=starter");
         req = new XMLHttpRequest;
         fn(req, bug_list, project_description, project_page_url, issues_url, contributors_url);
       }
