@@ -6,7 +6,7 @@ author: chadmiller
 ---
 
 Code for America brigades are pretty independent, but one day per year, they coordinate a massive event spanning several dozen
-cities. Here's what to exepct at the National Day of Civic Hacking, and why you should come.
+cities. Here's what to expect at the National Day of Civic Hacking, and why you should come.
 
 Typically, about 100 people gather downtown with their laptops, pencils, and notepads, and we work from morning to evening.
 It goes in four phases:
