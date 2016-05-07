@@ -16,7 +16,7 @@ Write down an idea
 First, we say hi and write ideas on cards, and form some loose consensus about where we should spend our time. Here is where
 you should be bold with an idea, if you have one to give. There's nothing to prepare for here, except to have an idea of
 what kinds of talents you want to ask for from the people around you. Code for America suggests several challenges to
-steer people who are unsure what idea to suggest. 2016 challenges:
+steer people who are unsure what idea to suggest. National 2016 challenges:
 
 - [Applying for Food Stamps](https://www.codeforamerica.org/events/national-day-2016/challenge-applying-for-food-stamps)
 - [Applying for Affordable Housing](https://www.codeforamerica.org/events/national-day-2016/challenge-applying-for-subsidized-housing)
@@ -25,6 +25,17 @@ steer people who are unsure what idea to suggest. 2016 challenges:
 - [Applying for a Business License](https://www.codeforamerica.org/events/national-day-2016/challenge-applying-for-a-business-license)
 - [Data Visualization for Obama Administration's Promise Zones](https://www.codeforamerica.org/events/national-day-2016/challenge-promise-zone-data)
 - [#DataAtWork Workforce Data Initiative](https://www.codeforamerica.org/events/national-day-2016/challenge-dataatwork-workforce-data-initiative)
+
+Our local 2016 challenges are:
+
+- Pet Adoption Apps
+- Orlando Walking Tours Apps
+- Data feeds for event-reporting in CityGram
+- Health and Human Services
+- Economic Development
+- Safety and Justice
+
+
 
 Make something
 --------------
