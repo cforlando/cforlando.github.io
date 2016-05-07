@@ -35,7 +35,10 @@ Our local 2016 challenges are:
 - Economic Development
 - Safety and Justice
 
-
+When you're surrounded by so many smart people, it can be easy to become blind to everything except the
+technology, and forget what we're really working for: People. People not as well-connected, or as well-educated, or
+privileged as we are. These challenges aren't meant to constrain what you work on -- you still decide that -- but
+to remind you to stay grounded in the world.
 
 Make something
 --------------
