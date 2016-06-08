@@ -12,7 +12,7 @@ Why Code for Orlando Exists
 
 Compared to huge rich tech companies and young exciting startups, government civic-service is not good at attracting tech talent. 
 
-That's a problem. Government is the common "platform" we all share, and it's in our interest to make things better. Code for America is a bunch of normal citizens who lend help or fixes when we notice a need that government hasn't solved yet. Code for Orlando is a "brigade" inside Code for America that focuses on Orlando and its surroundings. There are dozens of brigades all over the world, even outside America!
+That's a problem. Government is the common platform, and literal infrastructure that we all share. When it fails, we must fail. When it succeeds, we can succeed. It is in our interest to make things better.
 
 The people in Code for Orlando are volunteers, each working on whatever we care about, aiming to use our technical abilities to make a difference for the better. At hack-nights, hack-days, or hack-fests, we meet in person to synchronize efforts, rally support, spark new ideas, and get help.
 
